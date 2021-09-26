@@ -1,0 +1,397 @@
+#center {
+	text-align: center;
+}
+
+#right {
+	text-align: right;
+}
+
+#insert {
+	color: #ff2424;
+	font-weight: bold;
+}
+
+#delete {
+	color: silver;
+	text-decoration: line-through;
+}
+
+#attention {
+	background-color: #FFFFE0;
+}
+
+.selected a {
+	border: solid 1px #F16C00;
+	padding: 3px;
+	text-decoration: none;
+}
+
+#header {
+	width: 100%;
+	height: 80px;
+	background: #205887;
+}
+
+#header_inner {
+	position: relative;
+	width: 1280px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+/* Main */
+#main {
+	
+}
+
+#main_inner {
+	position: relative;
+	width: 1280px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 3.5em;
+}
+
+#footer {
+	width: 950px;
+	margin: 0 auto;
+	text-align: center;
+	clear: both;
+	border-top: dotted 1px #E1E1E1;
+	margin-top: 1.0em;
+	margin-bottom: 1.0em;
+	padding-top: 1.0em;
+}
+
+#logo {
+	position: absolute;
+	top: 1.6em;
+}
+
+#logo h1 {
+	display: inline;
+	color: #fff;
+	font-size: 2.6em;
+}
+
+#logo h2 {
+	display: inline;
+	padding-left: 0.5em;
+	color: #D2DCE5;
+	font-size: 1.0em;
+}
+
+/* Subnav */
+.subnav {
+	width: 100%;
+	height: 36px;
+	background-color: #eeeeee; /* Old browsers */
+	background-repeat: repeat-x; /* Repeat the gradient */
+	background-image: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+	/* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5),
+		color-stop(100%, #eeeeee) ); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+	/* Chrome 10+,Safari 5.1+ */
+	background-image: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+	/* IE10+ */
+	background-image: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+	/* Opera 11.10+ */
+	filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr =
+		'#f5f5f5', endColorstr = '#eeeeee', GradientType = 0 ); /* IE6-9 */
+	background-image: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+	/* W3C */
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-bottom: 1em;
+}
+
+.subnav .nav {
+	margin-bottom: 0;
+}
+
+.subnav .nav>li>a {
+	margin: 0;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	border-left: 1px solid #f5f5f5;
+	border-right: 1px solid #e5e5e5;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.subnav .nav>.active>a,.subnav .nav>.active>a:hover {
+	padding-left: 13px;
+	color: #777;
+	background-color: #e9e9e9;
+	border-right-color: #ddd;
+	border-left: 0;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .05);
+	-moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .05);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .05);
+}
+
+.subnav .nav>.active>a .caret,.subnav .nav>.active>a:hover .caret {
+	border-top-color: #777;
+}
+
+.subnav .nav>li:first-child>a,.subnav .nav>li:first-child>a:hover {
+	border-left: 0;
+	padding-left: 12px;
+	-webkit-border-radius: 4px 0 0 4px;
+	-moz-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}
+
+.subnav .nav>li:last-child>a {
+	border-right: 0;
+}
+
+.subnav .dropdown-menu {
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+/* Fixed subnav on scroll, but only for 980px and up (sorry IE!) */
+@media ( min-width : 980px) {
+	.subnav-fixed {
+		position: fixed;
+		top: 40px;
+		left: 0;
+		right: 0;
+		z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+		border-color: #d5d5d5;
+		border-width: 0 0 1px; /* drop the border on the fixed edges */
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		-webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0, 0, 0, .1);
+		-moz-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0, 0, 0, .1);
+		box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0, 0, 0, .1);
+		filter: progid : DXImageTransform.Microsoft.gradient ( enabled = false );
+		/* IE6-9 */
+	}
+	.subnav-fixed .nav {
+		width: 938px;
+		margin: 0 auto;
+		padding: 0 1px;
+	}
+	.subnav .nav>li:first-child>a,.subnav .nav>li:first-child>a:hover {
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+	}
+}
+
+/* Language */
+#language {
+	color: #fff;
+	position: absolute;
+	right: 0em;
+	border: none;
+}
+
+#language img {
+	border: none;
+}
+
+#language a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#hello {
+	position: absolute;
+	right: 0em;
+	top: 2em;
+	border: none;
+}
+
+td.phase_draft {
+	background-color: #f7d31b;
+}
+
+td.phase_draft a {
+	color: #333;
+}
+
+td.phase_screening {
+	background-color: #bed52f;
+}
+
+td.phase_screening a {
+	color: #333;
+}
+
+td.phase_screening_SPD {
+	background-color: #bed52f;
+}
+
+td.phase_screening_SPD a {
+	color: #333;
+}
+
+td.phase_screening_EAD {
+	background-color: #bed52f;
+}
+
+td.phase_screening_EAD a {
+	color: #333;
+}
+
+td.phase_screening_ETC {
+	background-color: #bed52f;
+}
+
+td.phase_screening_ETC a {
+	color: #333;
+}
+
+td.phase_translation {
+	background-color: #a1ca3d;
+}
+
+td.phase_translation a {
+	color: #333;
+}
+
+td.phase_screening_LED {
+	background-color: #87c241;
+}
+
+td.phase_screening_LED a {
+	color: #333;
+}
+
+td.phase_screening_NBD {
+	background-color: #87c241;
+}
+
+td.phase_screening_NBD a {
+	color: #333;
+}
+
+td.phase_setting_DC {
+	background-color: #77c27d;
+}
+
+td.phase_setting_DC a {
+	color: #333;
+}
+
+td.phase_setting_NBD {
+	background-color: #77c27d;
+}
+
+td.phase_setting_NBD a {
+	color: #333;
+}
+
+td.phase_development {
+	background-color: #74c4a7;
+}
+
+td.phase_development a {
+	color: #333;
+}
+
+td.phase_setting_DC2 {
+	background-color: #79ccda;
+}
+
+td.phase_setting_DC2 a {
+	color: #333;
+}
+
+td.phase_check_CRT {
+	background-color: #79ccda;
+}
+
+td.phase_check_CRT a {
+	color: #333;
+}
+
+td.phase_servicein_wait {
+	background-color: #42c3ed;
+}
+
+td.phase_servicein_wait a {
+	color: #333;
+}
+
+td.phase_servicein {
+	background-color: #4980c1;
+}
+
+td.phase_servicein a {
+	color: #fff;
+}
+
+td.phase_pending_wait {
+	background-color: #ec1946;
+}
+
+td.phase_pending_wait a {
+	color: #fff;
+}
+
+td.phase_serviceout_wait {
+	background-color: #6150a0;
+}
+
+td.phase_serviceout_wait a {
+	color: #fff;
+}
+
+td.phase_remove_NBD {
+	background-color: #ab4a99;
+}
+
+td.phase_remove_NBD a {
+	color: #fff;
+}
+
+td.phase_remove_DC {
+	background-color: #ab4a99;
+}
+
+td.phase_remove_DC a {
+	color: #fff;
+}
+
+td.phase_pending {
+	background-color: #5b0810;
+}
+
+td.phase_pending a {
+	color: #fff;
+}
+
+td.phase_serviceout {
+	background-color: #4b236a;
+}
+
+td.phase_serviceout a {
+	color: #fff;
+}
+
+.blink {
+	background-position: center center;
+	background-image: url('../images/now.gif');
+	background-repeat: no-repeat;
+}
+
+.ng {
+	background-position: center center;
+	background-image: url('../images/ng.png');
+	background-repeat: no-repeat;
+}
+
+.icon {
+	font-size: 2em;
+	text-align: center;
+}

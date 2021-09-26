@@ -1,0 +1,34 @@
+@import "compass";
+@import "mixins";
+
+#answer-textarea {
+    height: 200px;
+    width: 100%;
+}
+
+.aui {
+    .nin-global-nda-portlet {
+        .agreement-checkbox, .button-holder {
+            margin-top: 15px;
+        }
+        .button-holder {
+            float: right;
+        }
+        .form-inline .checkbox input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .control-group {
+            margin-bottom: 15px;
+        }
+        .nda-preview {
+            width: 90%;
+            height: 600px;
+        }
+        .nin-section-content {
+            max-height: 450px !important;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            display: block;
+        }
+    }
+}

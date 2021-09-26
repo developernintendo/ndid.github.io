@@ -1,0 +1,72 @@
+.aui {
+/*--- config design ---*/
+.devinfo-list-portlet, .changelog-list-portlet {
+	.error_message {
+	    padding:10px;
+	    margin:10px;
+	    background-color:#ffcccc;
+	    color:red;
+	    border-radius: 10px;  
+	}
+	.w200 label {
+	    font-weight: bold;
+	    width: 200px;
+	    display: block;
+	}
+    #category_sort {
+        margin-bottom: 30px;
+        > div{
+            display: inline-block;
+            i:before {
+                width: 15px;
+                color: #0af;
+            }
+        }
+    }
+    .supplement {
+        color: #333;
+        margin: 5px 2px 2px 20px;
+    }
+    #sortable { 
+        list-style-type: none;
+        margin: 10px 0px 0px 20px;
+        padding: 5px 5px 5px 25px;
+        border: 1px solid #0af;
+        display: none;
+        list-style-type: decimal;
+    }
+    #sortable li { 
+        margin: 5px;
+        padding: 2px 5px;
+        height: 18px;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        background-color: #ddd;
+        cursor: pointer;
+    }
+    #sortable li.ui-sortable-helper{
+        list-style-type: none;
+    }
+    .ui-icon.ui-icon-color-blue {
+	    background-image: url("/noa-theme/css/jquery-ui/images/ui-icons_2e83ff_256x240.png");
+    }
+    .gts_info div:first-child.gts-webcontent {
+        padding-top: 35px; 
+    }
+}
+
+.devinfo-list-portlet {
+    .devinfo_list button{
+        border: none;
+        border-radius: 5px;
+        padding: 4px 8px;
+        margin: 3px;
+        background-color: #f0f0f0;
+        box-shadow: 0px 0px 0px 1px #cdcdcd;
+    }
+    .devinfo_list button.button-selected{
+            border-left: 10px solid #cfd;
+    }
+}
+
+}

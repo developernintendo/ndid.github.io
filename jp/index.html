@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html class="aui ltr nin-public" dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <script src="google/recaptcha/api.js" async defer></script>
+    <title>Tools / Middleware - Nintendo Developer Portal</title>
+    <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link href="noa-theme/images/favicon.ico" rel="Shortcut Icon" />
+    <link rel="apple-touch-icon" href="../webclip.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Nintendo Developer Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../ogp.jpg">
+    <meta property="og:site_name" content="Nintendo Developer Portal">
+    <meta property="og:description" content="Nintendo Developer Portal">
+    <link class="lfr-css-file" href="../noa-theme/css/aui.css" rel="stylesheet" type="text/css" />
+    <link href="../html/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../html/portlet/journal_content/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../html/portlet/staging_bar/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../noa-omas-portlet/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../html/portlet/asset_publisher/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../html/portlet/workflow_definitions/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../html/portlet/bookmarks/css/main.css" rel="stylesheet" type="text/css" />
+    <link class="lfr-css-file" href="../noa-theme/css/main.css" rel="stylesheet" type="text/css" />
+    <script src="../noa-omas-portlet/js/main.js" type="text/javascript"></script>
+    <script src="../html/portlet/workflow_tasks/js/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var Liferay = {
+        Browser: {
+          acceptsGzip: function() {
+            return true
+          },
+          getMajorVersion: function() {
+            return 83
+          },
+          getRevision: function() {
+            return "537.36"
+          },
+          getVersion: function() {
+            return "83.0"
+          },
+          isAir: function() {
+            return false
+          },
+          isChrome: function() {
+            return true
+          },
+          isFirefox: function() {
+            return false
+          },
+          isGecko: function() {
+            return true
+          },
+          isIe: function() {
+            return false
+          },
+          isIphone: function() {
+            return false
+          },
+          isLinux: function() {
+            return false
+          },
+          isMac: function() {
+            return false
+          },
+          isMobile: function() {
+            return false
+          },
+          isMozilla: function() {
+            return false
+          },
+          isOpera: function() {
+            return false
+          },
+          isRtf: function() {
+            return true
+          },
+          isSafari: function() {
+            return true
+          },
+          isSun: function() {
+            return false
+          },
+          isWap: function() {
+            return false
+          },
+          isWapXhtml: function() {
+            return false
+          },
+          isWebKit: function() {
+            return true
+          },
+          isWindows: function() {
+            return true
+          },
+          isWml: function() {
+            return false
+          }
+        },
+        Data: {
+          NAV_SELECTOR: "#navigation",
+          isCustomizationView: function() {
+            return false
+          },
+          notices: [null]
+        },
+        ThemeDisplay: {
+          getLayoutId: function() {
+            return "31"
+          },
+          getLayoutURL: function() {
+            return "index.html"
+          },
+          getParentLayoutId: function() {
+            return "0"
+          },
+          isPrivateLayout: function() {
+            return "false"
+          },
+          isVirtualLayout: function() {
+            return false
+          },
+          getBCP47LanguageId: function() {
+            return "en-US"
+          },
+          getCDNBaseURL: function() {
+            return "index.html"
+          },
+          getCDNDynamicResourcesHost: function() {
+            return ""
+          },
+          getCDNHost: function() {
+            return ""
+          },
+          getCompanyId: function() {
+            return "10154"
+          },
+          getCompanyGroupId: function() {
+            return "10192"
+          },
+          getDefaultLanguageId: function() {
+            return "en_US"
+          },
+          getDoAsUserIdEncoded: function() {
+            return ""
+          },
+          getLanguageId: function() {
+            return "en_US"
+          },
+          getParentGroupId: function() {
+            return "23933"
+          },
+          getPathContext: function() {
+            return ""
+          },
+          getPathImage: function() {
+            return "/image"
+          },
+          getPathJavaScript: function() {
+            return "/html/js"
+          },
+          getPathMain: function() {
+            return "/c"
+          },
+          getPathThemeImages: function() {
+            return "https://developer.nintendo.com/noa-theme/images"
+          },
+          getPathThemeRoot: function() {
+            return "/noa-theme"
+          },
+          getPlid: function() {
+            return "689074"
+          },
+          getPortalURL: function() {
+            return "index.html"
+          },
+          getPortletSetupShowBordersDefault: function() {
+            return false
+          },
+          getScopeGroupId: function() {
+            return "23933"
+          },
+          getScopeGroupIdOrLiveGroupId: function() {
+            return "23933"
+          },
+          getSessionId: function() {
+            return ""
+          },
+          getSiteGroupId: function() {
+            return "23933"
+          },
+          getURLControlPanel: function() {
+            return "/group/control_panel?refererPlid=689074"
+          },
+          getURLHome: function() {
+            return "index.html"
+          },
+          getUserId: function() {
+            return "10158"
+          },
+          getUserName: function() {
+            return ""
+          },
+          isAddSessionIdToURL: function() {
+            return false
+          },
+          isFreeformLayout: function() {
+            return false
+          },
+          isImpersonated: function() {
+            return false
+          },
+          isSignedIn: function() {
+            return false
+          },
+          isStateExclusive: function() {
+            return false
+          },
+          isStateMaximized: function() {
+            return false
+          },
+          isStatePopUp: function() {
+            return false
+          }
+        },
+        PropsValues: {
+          NTLM_AUTH_ENABLED: false
+        }
+      };
+      var themeDisplay = Liferay.ThemeDisplay;
+      Liferay.AUI = {
+        getAvailableLangPath: function() {
+          return "/"
+        },
+        getCombine: function() {
+          return true
+        },
+        getComboPath: function() {
+          return "/combo/?browserId=other&minifierType=&languageId=en_US&b=6210&t=1632252785000&"
+        },
+        getFilter: function() {
+          return "min"
+        },
+        getJavaScriptRootPath: function() {
+          return "/html/js"
+        },
+        getLangPath: function() {
+          return "aui_lang.jsp?browserId=other&themeId=noa_WAR_noatheme&colorSchemeId=01&minifierType=js&languageId=en_US&b=6210&t=1632252785000"
+        },
+        getStaticResourceURLParams: function() {
+          return "?browserId=other&minifierType=&languageId=en_US&b=6210&t=1632252785000"
+        }
+      };
+      Liferay.authToken = "crqmqE39";
+      Liferay.currentURL = "\x2f";
+      Liferay.currentURLEncoded = "%2F";
+    </script>
+    <script src="html/js/barebone.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      Liferay.Portlet.list = ["56_INSTANCE_LRWshIkHHNol", "noabreadcrumbportlet_WAR_noanavigationportlet", "noaomasloginportlet_WAR_noaomasportlet", "82", "153_INSTANCE_zzzz", "101", "153", "28"];
+    </script>
+    <style type="text/css">
+      @media screen and (max-width:980px) {
+        div.portlet-language button.btn {
+          font-size: 12px;
+          padding: 4px 12px;
+          height: 35px
+        }
+      }
+
+      @media screen and (max-width:768px) {
+        div.portlet-language button.btn {
+          margin: 0
+        }
+
+        div.portlet-language a.span6 {
+          width: 48% !important;
+          display: inline-block !important
+        }
+      }
+
+      ul.nin-language-list div.portlet-language .btn-group a.span6 {
+        width: 48% !important;
+        display: inline-block !important
+      }
+
+      body.gray-bkg div.nin-body-content {
+        background-color: #eae8e9 !important
+      }
+
+      body.gray-bkg div.nin-body-content div.row-fluid {
+        margin: 0 auto;
+        max-width: 1280px
+      }
+
+      body.centered-tiles div.nin-body-content div.row-fluid {
+        margin: 0 auto;
+        max-width: 1280px
+      }
+
+      html {
+        background: white !important
+      }
+
+      body {
+        background: white !important
+      }
+    </style>
+    <style type="text/css"></style>
+    <script src="noa-theme/js/lib/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/jquery.dialogoptions.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/jquery.hoverintent.min.js" type="text/javascript"></script>
+    <script src="noa-theme/js/polyfills.js" type="text/javascript"></script>
+    <script src="noa-theme/js/custom_noa.js" type="text/javascript"></script>
+    <script src="noa-theme/js/mobile_nav.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/jquery.datatables.min.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/i18n/datepicker-en_us.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/i18n/datepicker-ja_jp.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/jquery.timepicker.min.js" type="text/javascript"></script>
+    <script src="noa-theme/js/semantic.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function getLocalizedDirtyFormAlert() {
+        return "You may have unsaved data on this page. Are you sure you wish to navigate away without saving?"
+      };
+    </script>
+  </head>
+  <body class=" yui3-skin-sam controls-visible signed-out public-page site dockbar-split ">
+    <!-- ACTION BAR -->
+    <div class="nin-action-bar">
+      <div id="wrapper" class="container-fluid">
+        <a class="mario" href="web/development/home.html" title="Back to the Home Page"></a>
+        <div id="banner" role="banner">
+          <div class="language-menu">
+            <div class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language " id="p_p_id_82_">
+              <div class="portlet-borderless-container" style="">
+                <div class="portlet-body">
+                  <div class="container-fluid">
+                    <div class="row-fluid">
+                      <div class="btn-group span12" data-toggle="buttons-radio">
+                        <a class="nin-nav-button" href="jp/index.html">
+                          <button type="button" class="btn span12 "> 日本語 </button>
+                        </a>
+                        <a class="nin-nav-button" href="#">
+                          <button type="button" class="btn span12 active"> English </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TOP NAVIGATION -->
+    <div class="nin-top-nav">
+      <div id="nin-site-header" class="container-fluid">
+        <div class="row-fluid">
+          <div class="nin-site-title span3">
+            <a class="logo default-logo" href="index.html" title="Back to the Home Page">
+              <img class="nintendo" src="../noa-theme/images/bkg/nintendo.png" width="122" height="30" alt="Nintendo" />
+            </a>
+          </div>
+          <div id="navbar" class="span9 nin-public-nav">
+            <div class="nin-portal-nav sort-pages modify-pages site-navigation" id="navigation" role="navigation">
+              <div class="mobile-nav hidden-desktop">
+                <button class="mobile-icon">Menu &#9776;</button>
+                <button class="mobile-close">&#735;</button>
+              </div>
+              <div class="navbar-inner nin-vertical-nav-elements">
+                <span class="nin-main-nav-title hidden-desktop">Main Navigation</span>
+                <ul aria-label="Site Pages" class="nav navbar-nav" role="menubar">
+                  <li>
+                    <a href="the-process.html">
+                      <span>The Process</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tools.html">
+                      <span>Tools / Middleware</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="faq.html">
+                      <span>FAQ</span>
+                    </a>
+                  </li>
+                  <li class="hidden-desktop">
+                    <a href="register.html">
+                      <span>Register</span>
+                    </a>
+                  </li>
+                  <li class="hidden-desktop">
+                    <a href="../ndid/login.html" rel="nofollow">
+                      <span>Sign In</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="nin-sign-in visible-desktop">
+                  <ul aria-label="Site Pages" class="nav navbar-nav" role="menubar">
+                    <li>
+                      <a href="register.html">
+                        <span>Register</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="../ndid/login.html" rel="nofollow" class="sign-in">Sign In</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BREADCRUMB -->
+    <div class="nin-global-breadcrumb">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="portlet-boundary portlet-boundary_noabreadcrumbportlet_WAR_noanavigationportlet_ portlet-static portlet-static-end portlet-borderless noa-breadcrumb " id="p_p_id_noabreadcrumbportlet_WAR_noanavigationportlet_">
+              <div class="portlet-borderless-container" style="">
+                <div class="portlet-body">
+                  <ul class="nin-breadcrumb nin-public-breadcrumb">
+                    <li class="dropdown selected">
+                      <a class="dropdown-toggle" href="index.html">
+                        <span> Homepage </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BODY CONTENT & VERTICAL NAVIGATION -->
+    <div class="container-fluid nin-body-content">
+      <div id="content-outside-wrapper" class="row-fluid">
+        <div id="content-wrapper">
+          <div class="columns-1" id="main-content" role="main">
+            <div class="portlet-layout row-fluid">
+              <div class="portlet-column portlet-column-only span12" id="column-1">
+                <div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-1">
+                  <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content " id="p_p_id_56_INSTANCE_LRWshIkHHNol_">
+                    <div class="portlet-borderless-container" style="">
+                      <div class="portlet-body">
+                        <div class="journal-content-article">
+                          <style type="text/css">
+                            #public-home-wrapper {
+                              margin: -50px -20px -20px;
+                              font-family: 'Lato', sans-serif;
+                              font-size: 16px
+                            }
+
+                            .signed-in #public-home-wrapper {
+                              margin-top: -20px
+                            }
+
+                            #public-home-wrapper #soft-feild {
+                              background: url('documents/23933/273988966/ndp-gdc2018-banner-en.jpg') no-repeat top center;
+                              background-size: cover;
+                              margin-bottom: 20px
+                            }
+
+                            #public-home-wrapper #soft-feild a {
+                              min-height: 200px;
+                              width: 100%;
+                              display: block;
+                              height: calc(100vw * .13)
+                            }
+
+                            #public-home-wrapper .nin-body-content {
+                              padding-bottom: 0 !important
+                            }
+
+                            #public-home-wrapper a {
+                              color: #39f;
+                              font-weight: 700
+                            }
+
+                            #public-home-wrapper .row-gray {
+                              background-color: #eee
+                            }
+
+                            #public-home-wrapper .top-banner {
+                              width: 100%;
+                              min-height: 580px;
+                              padding: 80px 40px;
+                              color: #FFF;
+                              background-color: #333
+                            }
+
+                            #public-home-wrapper #home-banner {
+                              min-height: 500px;
+                              padding: 80px 40px;
+                              color: #FFF;
+                              background: url('../documents/23933/747462/banner-hyrule.png') no-repeat;
+                              background-size: cover
+                            }
+
+                            #public-home-wrapper #home-banner .btn-primary {
+                              font-size: 20px;
+                              padding: .75em 1.5em;
+                              margin-top: 1em
+                            }
+
+                            #public-home-wrapper #steps-banner {
+                              background: #969da9 url('../documents/23933/747462/icon-color-mushroom.png') no-repeat right 50px bottom 30px;
+                              background-size: 10%;
+                              min-height: 200px
+                            }
+
+                            #public-home-wrapper #middleware-banner {
+                              background: #969da9 url('../documents/23933/747462/icon-spring.png') no-repeat right 50px bottom 30px;
+                              background-size: 10%;
+                              min-height: 200px
+                            }
+
+                            #public-home-wrapper #faq-banner {
+                              background: #969da9 url('../documents/23933/747462/icon-qblock2.png') no-repeat right 30px bottom 20px;
+                              background-size: 10%;
+                              min-height: 300px
+                            }
+
+                            #public-home-wrapper #home-banner p {
+                              font-weight: 300;
+                              font-size: 24px;
+                              line-height: 1.25em;
+                              margin-bottom: 1em
+                            }
+
+                            #public-home-wrapper .top-banner p {
+                              color: #FFF;
+                              width: 50%;
+                              font-size: 20px;
+                              line-height: 1.25em;
+                              text-shadow: 1px 1px 0 #000
+                            }
+
+                            #public-home-wrapper .top-banner h2 {
+                              font-weight: 400;
+                              font-size: 48px;
+                              margin-bottom: .75em;
+                              color: #FFF;
+                              line-height: 1em;
+                              text-shadow: 1px 1px 0 #000
+                            }
+
+                            #public-home-wrapper #middleware-banner p,
+                            #public-home-wrapper #middleware-banner h2,
+                            #public-home-wrapper #steps-banner p,
+                            #public-home-wrapper #steps-banner h2,
+                            #public-home-wrapper #faq-banner p,
+                            #public-home-wrapper #faq-banner h2 {
+                              color: #FFF;
+                              text-shadow: none
+                            }
+
+                            #public-home-wrapper h3 {
+                              margin: 0 0 2em;
+                              font-weight: 300;
+                              font-size: 28px;
+                              letter-spacing: .1em
+                            }
+
+                            #public-home-wrapper h3 span {
+                              font-weight: 400;
+                              font-size: 16px;
+                              padding: 1em 1em .25em 1.25em;
+                              margin-left: .75em;
+                              border-left: 1px solid #000;
+                              letter-spacing: 0;
+                              color: #333
+                            }
+
+                            #public-home-wrapper h4 {
+                              color: #333;
+                              font-weight: 400;
+                              font-size: 22px
+                            }
+
+                            #public-home-wrapper h5 {
+                              font-size: 18px
+                            }
+
+                            #public-home-wrapper #sec-create p {
+                              padding: .25em 1em
+                            }
+
+                            #public-home-wrapper #sec-devportal .content {
+                              background-color: #FFF;
+                              padding: 1em
+                            }
+
+                            #public-home-wrapper #sec-devportal img {
+                              width: 100%;
+                              border-bottom: 1px solid #e1e1e1
+                            }
+
+                            #public-home-wrapper #sec-platform .platforms {
+                              width: 100%;
+                              margin-left: 0 !important;
+                              padding: 2em
+                            }
+
+                            #public-home-wrapper #sec-platform #platform-3ds {
+                              background-color: #ce181e;
+                              margin-left: 1%
+                            }
+
+                            #public-home-wrapper #sec-platform #platform-wiiu {
+                              background-color: #0096c8;
+                              margin-left: 1%;
+                              margin-right: 1%
+                            }
+
+                            #public-home-wrapper #sec-platform #platform-switch {
+                              background-color: #e60012;
+                              margin-right: 1%
+                            }
+
+                            #public-home-wrapper #sec-platform h4 {
+                              color: #FFF;
+                              font-size: 30px;
+                              font-weight: 300
+                            }
+
+                            #public-home-wrapper #sec-platform p {
+                              font-weight: 300;
+                              color: #FFF;
+                              padding-bottom: 1em
+                            }
+
+                            #public-home-wrapper #sec-platform a {
+                              color: #FFF;
+                              text-decoration: underline
+                            }
+
+                            #public-home-wrapper #sec-cta p {
+                              font-size: 18px;
+                              color: #666;
+                              font-weight: 300;
+                              margin-bottom: 2em
+                            }
+
+                            #public-home-wrapper #sec-platform,
+                            #public-home-wrapper #sec-devportal,
+                            #public-home-wrapper #sec-create,
+                            #public-home-wrapper #sec-cta,
+                            #public-home-wrapper #sec-steps,
+                            #public-home-wrapper .row-nin {
+                              padding: 3em 0 4em
+                            }
+
+                            #public-home-wrapper ol.faq {
+                              list-style: none;
+                              margin: 0;
+                              padding: 0
+                            }
+
+                            #public-home-wrapper #sec-steps ol li {
+                              padding-bottom: 1em;
+                              font-size: 20px
+                            }
+
+                            #public-home-wrapper #sec-steps ol li h5 {
+                              display: inline-block;
+                              font-size: 20px;
+                              font-weight: 600
+                            }
+
+                            #public-home-wrapper #sec-steps ol li p {
+                              font-size: 16px
+                            }
+
+                            #public-home-wrapper .flex-area {
+                              display: flex
+                            }
+
+                            #public-home-wrapper #sec-devportal .flex-area .span3 {
+                              background-color: #FFF
+                            }
+
+                            #public-home-wrapper #sec-news {
+                              background-color: #999
+                            }
+
+                            #public-home-wrapper #sec-news h4 {
+                              color: #CCC;
+                              padding: .75em 0 0 2.1em
+                            }
+
+                            #public-home-wrapper #sec-news p {
+                              color: #FFF;
+                              padding: 0 3em .75em
+                            }
+
+                            #public-home-wrapper #sec-news p span {
+                              font-style: italic
+                            }
+
+                            .aui form {
+                              margin-bottom: -15px
+                            }
+
+                            @media only screen and (max-width:767px) {
+                              #public-home-wrapper h3 span {
+                                display: none
+                              }
+
+                              #public-home-wrapper .top-banner p {
+                                width: 100%
+                              }
+
+                              #public-home-wrapper h3 {
+                                margin: 0 2em;
+                                text-align: center;
+                                padding-bottom: 2em
+                              }
+
+                              #public-home-wrapper .flex-area {
+                                display: block
+                              }
+
+                              #public-home-wrapper #sec-platform .platforms {
+                                width: 100%
+                              }
+
+                              #public-home-wrapper .top-banner p {
+                                width: 100%
+                              }
+
+                              #public-home-wrapper #sec-steps ol li {
+                                padding: 0 1em 1em
+                              }
+
+                              #public-home-wrapper #middleware-banner {
+                                background-image: none
+                              }
+
+                              #public-home-wrapper .row-nin {
+                                padding: 0 1em 1em
+                              }
+                            }
+                          </style>
+                          <div id="public-home-wrapper">
+                            <!-- <div id="soft-feild"><a href="http://www.gdconf.com/news/splatoon-2-arms-devs-will-speaking-gdc-2018" target="_new">&nbsp;</a></div> -->
+                            <div class="row-fluid">
+                              <div class="span12 top-banner" id="home-banner">
+                                <h2>Your Adventure with Nintendo Awaits...</h2>
+                                <p>Are you ready to tell your story? <br /> Let us help you make your next great game! </p>
+                                <p>
+                                  <input class="btn btn-primary" onclick="location.href='register.html'" type="button" value="Register" />
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row-fluid" id="sec-news">
+                              <div class="span12">
+                                <h4 style="color:#FFFFFF">Latest News</h4>
+                                <p>
+                                  <span>2021.03.25</span> - About development for Nintendo platforms. (For more information, see <a href="web/development/home/development-for-nintendo-platforms.html">
+                                    <span style="color:#00FFFF;">here</span>
+                                  </a>)
+                                </p>
+                                <!-- <p><span>2019.09.26</span> - Nintendo will be attending GCAP 2019 in Melbourne! (For more information, see <a href="/web/development/home/gcap-2019"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2019.09.11</span> - Nintendo will be attending Unite Tokyo 2019! (For more information, see <a href="/web/development/home/unite-tokyo-2019"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2019.09.09</span> - Nintendo will be attending Unite Copenhagen 2019! (For more information, see <a href="/web/development/home/unite-copenhagen-2019"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2019.08.23</span> - Nintendo will be attending CEDEC 2019 in Yokohama from September 4-6 , 2019. (For more information, see <a href="/web/development/home/cedec2019"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2019.05.17</span> - Indie Titles on Nintendo Switch to be shown off at BitSummit 7 Spirits. (For more information, see <a href="/web/development/home/bitsummit-7-spirits"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2018.12.17</span> - From Unite LA, learn tips on how Night School Studio brought "Oxenfree" to Nintendo Switch. (For more information, see <a href="https://www.youtube.com/watch?v=ngpmR0Bxi08"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2018.08.08</span> - Nintendo will be attending CEDEC 2018 in Yokohama from August 22-24 , 2018. (For more information, see <a href="/web/development/home/cedec2018"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2018.05.02</span> - Nintendo will be exhibiting at Unite Tokyo 2018. (For more information, see <a href="/web/development/home/unite-tokyo-2018"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2018.05.02</span> - Indie Titles on Nintendo Switch to be shown off at BitSummit Volume 6. (For more information, see <a href="/web/development/home/bitsummit-volume-6"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2018.02.22</span> - Splatoon2 and ARMS developers will be presenting at GDC 2018. (For more information, see <a href="http://www.gdconf.com/news/splatoon-2-arms-devs-will-speaking-gdc-2018/" target="_new"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2017.08.21</span> - Nintendo will be attending CEDEC 2017 in Yokohama from August 30th to September 1st. (For more information, see <a href="/web/development/home/cedec2017"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2017.06.16</span> - Nintendo will attend Unite Europe in Amsterdam from June 27-29, 2017. (For more information, see <a href="/web/development/home/unite-europe-2017"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2017.05.18</span> - Indie Titles on Nintendo Switch to be Exhibited at A 5th of BitSummit Event. (For more information, see <a href="/web/development/home/bitsummit5th"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2017.03.17</span> - The Legend of Zelda: Breath of the Wild developers hosted a panel at GDC. (For more information, see <a href="/web/development/home/gdc2017"><span style="color:#00FFFF;">here</span></a>.)<br /><span>2016.07.07</span> - Nintendo has merged all of its developer programs into a single worldwide portal. Registration is open to all, with access provided shortly afterwards. -->
+                                <p>&nbsp;</p>
+                              </div>
+                            </div>
+                            <div class="row-fluid row-gray" id="sec-devportal">
+                              <div class="span1">&nbsp;</div>
+                              <div class="span10">
+                                <h3>About Nintendo Developer Portal</h3>
+                                <div class="row-fluid flex-area">
+                                  <div class="span3">
+                                    <img src="../documents/23933/747462/pic-regeasy2.jpg" />
+                                    <div class="content">
+                                      <h5>Joining is Easy</h5>
+                                      <p>Signing up for the Nintendo Developer Portal is easy and can be completed in just a few minutes.</p>
+                                      <p>
+                                        <a href="register.html">Register Now&nbsp; <i aria-hidden="true" class="fa fa-arrow-right">&nbsp;</i>
+                                        </a>
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="span3">
+                                    <img src="../documents/23933/747462/pic-anyone3.jpg" />
+                                    <div class="content">
+                                      <h5>Everybody is Welcome</h5>
+                                      <p>No development experience? No problem! We're here to help you regardless of your level of experience in game development.</p>
+                                    </div>
+                                  </div>
+                                  <div class="span3">
+                                    <img src="../documents/23933/747462/pic-platforms6.png" style="background-color:#56BF63;" />
+                                    <div class="content">
+                                      <h5>The Power of Dedicated Hardware</h5>
+                                      <p>Your titles can utilize all the features available on Nintendo consoles.</p>
+                                      <p>
+                                        <a href="tools.html">Tools <i aria-hidden="true" class="fa fa-arrow-right">&nbsp;</i>
+                                        </a>
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="span3">
+                                    <img src="../documents/23933/747462/pic-eshop6.gif" />
+                                    <div class="content">
+                                      <h5>Self-Publish your Game</h5>
+                                      <p>Once your game is complete, you can self-publish it on the Nintendo eShop with the price and release date entirely up to you.</p>
+                                      <p>
+                                        <a href="the-process.html">The Process&nbsp; <i aria-hidden="true" class="fa fa-arrow-right">&nbsp;</i>
+                                        </a>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="span1">&nbsp;</div>
+                            </div>
+                            <div class="row-fluid" id="sec-platform">
+                              <div class="span1">&nbsp;</div>
+                              <div class="span10">
+                                <h3>Nintendo Consoles</h3>
+                                <div class="row-fluid flex-area">
+                                  <div class="span6 platforms" id="platform-switch">
+                                    <img align="left" src="../documents/23933/747462/plat-switch.png" />
+                                    <h4 style="padding-top: 30px; padding-bottom: 20px">Nintendo Switch</h4>
+                                    <p>The Switch is a console gaming device that you can take outside. It combines the power of a console that offers solid and substantive gameplay, with the flexibility of a handheld system that allows you to enjoy games wherever you can take them.</p>
+                                  </div>
+                                  <!-- <div class="span6 platforms" id="platform-wiiu"><div class="text-center"><img src="../documents/23933/747462/plat-wiiu-white/c25f9858-0b33-4e7e-aa0e-065afc60a838?t=1468457983912" /></div><h4>Wii U</h4><p>The Wii U is a home gaming console that utilizes the screen of the Wii U GamePad controller along with a TV to provide new and exciting gaming experiences.</p></div> -->
+                                  <!-- <div class="span6 platforms" id="platform-3ds"><div class="text-center"><img src="../documents/23933/747462/plat-3ds5.png" /></div><h4>Nintendo 3DS</h4><p>The Nintendo 3DS is a handheld gaming system that makes it possible to view stereoscopic imagery without the need for special glasses through its use of a special screen.</p></div> -->
+                                </div>
+                              </div>
+                              <div class="span1">&nbsp;</div>
+                            </div>
+                            <div class="row-fluid row-gray" id="sec-cta">
+                              <div class="span1">&nbsp;</div>
+                              <div class="span10 text-center">
+                                <p>Ready to create your first game for Nintendo? Get started now!</p>
+                                <p>
+                                  <input class="btn btn-primary" onclick="location.href='register.html'" type="button" value="Register for the Nintendo Developer Portal" />
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="entry-links"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet-boundary portlet-boundary_1_WAR_kaleodesignerportlet_ portlet-static portlet-static-end portlet-borderless kaleo-designer-portlet " id="p_p_id_1_WAR_kaleodesignerportlet_"></div>
+          <form action="#" id="hrefFm" method="post" name="hrefFm">
+            <span></span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="nin-mega-footer">
+      <div id="footer-wrapper" class="container-fluid">
+        <div id="footer" role="contentinfo" class="row-fluid">
+          <ul>
+            <li>
+              <a href="web/development/contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="web/development/privacy.html">Privacy Notice</a>
+            </li>
+            <li class="copyright">&copy; 2021 Nintendo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <span id="required-asterisk" class="hidden">
+      <div class="req-note-asterisk req-note-asterisk-handle">An asterisk <span class='label-required'>*</span> denotes required field </div>
+    </span>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var a = getCookie("trackEssentialCookie");
+        if (a != "enabled" && a != "disabled" && true) {
+          window.onscroll = function() {
+            window.scrollTo(0, 0)
+          };
+          document.body.style.overflow = "hidden";
+          $(".cookie-banner").show()
+        }
+      });
+
+      function closeCookieBanner() {
+        document.body.style.overflow = "";
+        window.onscroll = function() {};
+        $(".cookie-overlay").hide();
+        setCookie("trackEssentialCookie", "enabled", 365)
+      }
+
+      function rejectAndCloseCookieBanner() {
+        document.body.style.overflow = "";
+        window.onscroll = function() {};
+        $(".cookie-overlay").hide();
+        setCookie("trackEssentialCookie", "enabled", 365);
+        setCookie("tGoogleAnalytics", "disabled", 365)
+      }
+
+      function getCookie(d) {
+        var b = d + "=";
+        var a = document.cookie.split(";");
+        for (var e = 0; e < a.length; e++) {
+          var f = a[e];
+          while (f.charAt(0) == " ") {
+            f = f.substring(1)
+          }
+          if (f.indexOf(b) == 0) {
+            return f.substring(b.length, f.length)
+          }
+        }
+        return ""
+      }
+
+      function setCookie(b, f, c) {
+        var e = new Date();
+        e.setTime(e.getTime() + (c * 24 * 60 * 60 * 1000));
+        var a = "expires=" + e.toUTCString();
+        document.cookie = b + "=" + f + ";" + a + ";path=/"
+      };
+    </script>
+  </body>
+  <script type="text/javascript">
+    Liferay.Util.addInputFocus();
+  </script>
+  <script type="text/javascript">
+    Liferay.Portlet.onLoad({
+      canEditTitle: false,
+      columnPos: 0,
+      isStatic: "end",
+      namespacedId: "p_p_id_56_INSTANCE_LRWshIkHHNol_",
+      portletId: "56_INSTANCE_LRWshIkHHNol",
+      refreshURL: "\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d689074\x26p_p_id\x3d56_INSTANCE_LRWshIkHHNol\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252F"
+    });
+    Liferay.Portlet.onLoad({
+      canEditTitle: false,
+      columnPos: 0,
+      isStatic: "end",
+      namespacedId: "p_p_id_82_",
+      portletId: "82",
+      refreshURL: "\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d689074\x26p_p_id\x3d82\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252F"
+    });
+    $(document).ready(function() {
+      $("#main-content .portlet-layout .nin-body-with-vertical-nav .nin-page-title .page-title").text("")
+    });
+    Liferay.Portlet.onLoad({
+      canEditTitle: false,
+      columnPos: 0,
+      isStatic: "end",
+      namespacedId: "p_p_id_noabreadcrumbportlet_WAR_noanavigationportlet_",
+      portletId: "noabreadcrumbportlet_WAR_noanavigationportlet",
+      refreshURL: "\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d689074\x26p_p_id\x3dnoabreadcrumbportlet_WAR_noanavigationportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252F"
+    });
+    Liferay.provide(Liferay.Util, "openKaleoDesignerPortlet", function(c) {
+      var b = AUI();
+      var e = Liferay.PortletURL.createURL("index.html");
+      e.setParameter("mvcPath", "/");
+      e.setParameter("availableFields", c.availableFields);
+      e.setParameter("availablePropertyModels", c.availablePropertyModels);
+      e.setParameter("ddmStructureId", c.ddmStructureId);
+      e.setParameter("draftVersion", c.draftVersion);
+      e.setParameter("kaleoProcessId", c.kaleoProcessId);
+      e.setParameter("name", c.name);
+      e.setParameter("openerWindowName", c.openerWindowName);
+      e.setParameter("portletResourceNamespace", c.portletResourceNamespace);
+      e.setParameter("propertiesSaveCallback", c.propertiesSaveCallback);
+      e.setParameter("refreshOpenerOnClose", c.refreshOpenerOnClose);
+      e.setParameter("saveCallback", c.saveCallback);
+      e.setParameter("version", c.version);
+      e.setWindowState("pop_up");
+      c.uri = e.toString();
+      var d = c.dialog;
+      if (!d) {
+        var f = b.one(Liferay.Util.getOpener()).get("region");
+        d = {
+          destroyOnHide: true
+        };
+        c.dialog = d
+      }
+      if (!("align" in d)) {
+        d.align = Liferay.Util.Window.ALIGN_CENTER
+      }
+      var a = c.dialogIframe;
+      if (!a) {
+        a = {
+          closeOnEscape: false
+        };
+        c.dialogIframe = a
+      }
+      Liferay.Util.openWindow(c)
+    }, ["liferay-portlet-url"]);
+    Liferay.Portlet.onLoad({
+      canEditTitle: false,
+      columnPos: 0,
+      isStatic: "end",
+      namespacedId: "p_p_id_1_WAR_kaleodesignerportlet_",
+      portletId: "1_WAR_kaleodesignerportlet",
+      refreshURL: "\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d689074\x26p_p_id\x3d1_WAR_kaleodesignerportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252F"
+    });
+    AUI().use("aui-base", "liferay-menu", "liferay-notice", "liferay-poller", "liferay-session", function(a) {
+      (function() {
+        Liferay.Util.addInputType();
+        Liferay.Portlet.ready(function(b, c) {
+          Liferay.Util.addInputType(c)
+        });
+        if (a.UA.mobile) {
+          Liferay.Util.addInputCancel()
+        }
+      })();
+      (function() {
+        new Liferay.Menu();
+        var b = Liferay.Data.notices;
+        for (var c = 1; c < b.length; c++) {
+          new Liferay.Notice(b[c])
+        }
+      })();
+      (function() {
+        Liferay.Session = new Liferay.SessionBase({
+          autoExtend: true,
+          sessionLength: 240,
+          redirectOnExpire: true,
+          redirectUrl: "index.html",
+          warningLength: 3
+        })
+      })()
+    });
+  </script>
+  <script src="noa-theme/js/main.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Nintendo Developer ID Management System</title>
+    <link rel="apple-touch-icon" href="webclip.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Nintendo Developer Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content=".ogp.jpg">
+    <meta property="og:site_name" content="Nintendo Developer Portal">
+    <meta property="og:description" content="Nintendo Developer Portal">
+    <!--[if lt IE 9]>
+	  <script src="../js/html5.js"></script>
+	<![endif]-->
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/override.css"></link>
+    <script type="text/javascript" src="js/ndi.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/bootstrap.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/override.js" charset="utf-8"></script>
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <div class="navbar navbar-inverse" style="margin-bottom: 0px;">
+        <div class="navbar-inner">
+            <div class="container">
+                <ul class="nav">
+                    <li><a href="#" class="navbar-brand">OAuth Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <br />
+        <br />
+        <br />
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-6 col-md-offset-3 " style="background-color: #f7f7f7; border-radius: 15px;">
+                    <br />
+                    <div class="text-left">
+                        <span>
+	<div class="alert alert-info">
+		<a class="close" href="#" data-dismiss="alert" id="id1" onclick="">×</a>
+		<p><span>『Nintendo Developer Portal』 が情報へのアクセス認可を求めています。<br/>    アクセスを許可する場合は、Nintendo Developer ID/パスワードを入力して『許可』ボタンを押してください。<br/>    既に OMAS のアカウントをお持ちの方は、そのまま Nintendo Developer ID としてお使いいただけます。</span></p>
+                    </div>
+                    </span>
+                </div>
+                <br />
+                <div class="text-right">
+                    <a href="#" id="id2" onclick="ndiJapanese()">Japanese</a>                    |
+                    <a href="#" id="id3" onclick="ndiEnglish()">English</a>
+                </div>
+                <div class="text-center">
+                    <div id="id4">
+                        <div></div>
+
+                        <form class="form-horizontal" id="id5">
+                            <div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="hidden" name="id5_hf_0" id="id5_hf_0" /></div>
+
+                            <table class="table">
+                                <tr>
+                                    <th class="col-md-3">Nintendo Developer ID</th>
+                                    <td><span id="id6">
+	<input type="text" class="form-control" value="" name="loginid:input" id="id7" placeholder="" onchange="" autofocus="autofocus"/>
+	<span class="control-label"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="col-md-3">パスワード</th>
+                                    <td><span id="id8">
+	<input type="password" class="form-control" value="" name="password:input"/>
+	
+	
+	<span></span>
+                                        <span class="control-label"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                            </table>
+                            <div class="form-actions">
+                                <span id="id9">
+	<input id="ida" value="ログイン" onclick="ndiLogin()" class="btn  btn-primary"/>
+</span>
+                            </div>
+                        </form>
+                        <div></div>
+                    </div>
+                </div>
+                <br />
+                <div class="text-right">
+
+                </div>
+                <br />
+                <div class="text-right">
+                    <a href="forgotlogin.html">Nintendo Developer ID を忘れた時</a>                    |
+                    <a href="forgotpassword.html">パスワードを忘れた時</a>
+                </div>
+                <br />
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="footer" class="fluid">
+        © 2011 Nintendo.
+        <br /> NDID ver.26.0.0_20210826-0713
+    </div>
+
+</body>
+
+</html>

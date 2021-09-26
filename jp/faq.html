@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html class="aui ltr nin-public" dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <script src="google/recaptcha/api.js" async defer></script>
+    <title>Tools / Middleware - Nintendo Developer Portal</title>
+    <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link href="noa-theme/images/favicon.ico" rel="Shortcut Icon" />
+    <link rel="apple-touch-icon" href="../webclip.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Nintendo Developer Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../ogp.jpg">
+    <meta property="og:site_name" content="Nintendo Developer Portal">
+    <meta property="og:description" content="Nintendo Developer Portal">
+    <link class="lfr-css-file" href="../noa-theme/css/aui.css" rel="stylesheet" type="text/css" />
+    <link href="../html/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../html/portlet/journal_content/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../html/portlet/staging_bar/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../noa-omas-portlet/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../html/portlet/asset_publisher/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../html/portlet/workflow_definitions/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../html/portlet/bookmarks/css/main.css" rel="stylesheet" type="text/css" />
+    <link class="lfr-css-file" href="../noa-theme/css/main.css" rel="stylesheet" type="text/css" />
+    <script src="../noa-omas-portlet/js/main.js" type="text/javascript"></script>
+    <script src="../html/portlet/workflow_tasks/js/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var Liferay = {
+            Browser: {
+                acceptsGzip: function() {
+                    return true
+                },
+                getMajorVersion: function() {
+                    return 77
+                },
+                getRevision: function() {
+                    return "77.0"
+                },
+                getVersion: function() {
+                    return "77.0"
+                },
+                isAir: function() {
+                    return false
+                },
+                isChrome: function() {
+                    return false
+                },
+                isFirefox: function() {
+                    return true
+                },
+                isGecko: function() {
+                    return true
+                },
+                isIe: function() {
+                    return false
+                },
+                isIphone: function() {
+                    return false
+                },
+                isLinux: function() {
+                    return false
+                },
+                isMac: function() {
+                    return false
+                },
+                isMobile: function() {
+                    return false
+                },
+                isMozilla: function() {
+                    return true
+                },
+                isOpera: function() {
+                    return false
+                },
+                isRtf: function() {
+                    return true
+                },
+                isSafari: function() {
+                    return false
+                },
+                isSun: function() {
+                    return false
+                },
+                isWap: function() {
+                    return false
+                },
+                isWapXhtml: function() {
+                    return false
+                },
+                isWebKit: function() {
+                    return false
+                },
+                isWindows: function() {
+                    return true
+                },
+                isWml: function() {
+                    return false
+                }
+            },
+            Data: {
+                NAV_SELECTOR: "#navigation",
+                isCustomizationView: function() {
+                    return false
+                },
+                notices: [null]
+            },
+            ThemeDisplay: {
+                getLayoutId: function() {
+                    return "74"
+                },
+                getLayoutURL: function() {
+                    return "faq.html"
+                },
+                getParentLayoutId: function() {
+                    return "31"
+                },
+                isPrivateLayout: function() {
+                    return "false"
+                },
+                isVirtualLayout: function() {
+                    return false
+                },
+                getBCP47LanguageId: function() {
+                    return "en-US"
+                },
+                getCDNBaseURL: function() {
+                    return "index.html"
+                },
+                getCDNDynamicResourcesHost: function() {
+                    return ""
+                },
+                getCDNHost: function() {
+                    return ""
+                },
+                getCompanyId: function() {
+                    return "10154"
+                },
+                getCompanyGroupId: function() {
+                    return "10192"
+                },
+                getDefaultLanguageId: function() {
+                    return "en_US"
+                },
+                getDoAsUserIdEncoded: function() {
+                    return ""
+                },
+                getLanguageId: function() {
+                    return "en_US"
+                },
+                getParentGroupId: function() {
+                    return "23933"
+                },
+                getPathContext: function() {
+                    return ""
+                },
+                getPathImage: function() {
+                    return "/image"
+                },
+                getPathJavaScript: function() {
+                    return "/html/js"
+                },
+                getPathMain: function() {
+                    return "/c"
+                },
+                getPathThemeImages: function() {
+                    return "https://developer.nintendo.com/noa-theme/images"
+                },
+                getPathThemeRoot: function() {
+                    return "/noa-theme"
+                },
+                getPlid: function() {
+                    return "4017936"
+                },
+                getPortalURL: function() {
+                    return "index.html"
+                },
+                getPortletSetupShowBordersDefault: function() {
+                    return false
+                },
+                getScopeGroupId: function() {
+                    return "23933"
+                },
+                getScopeGroupIdOrLiveGroupId: function() {
+                    return "23933"
+                },
+                getSessionId: function() {
+                    return ""
+                },
+                getSiteGroupId: function() {
+                    return "23933"
+                },
+                getURLControlPanel: function() {
+                    return "/group/control_panel?refererPlid=4017936"
+                },
+                getURLHome: function() {
+                    return "index.html"
+                },
+                getUserId: function() {
+                    return "10158"
+                },
+                getUserName: function() {
+                    return ""
+                },
+                isAddSessionIdToURL: function() {
+                    return false
+                },
+                isFreeformLayout: function() {
+                    return false
+                },
+                isImpersonated: function() {
+                    return false
+                },
+                isSignedIn: function() {
+                    return false
+                },
+                isStateExclusive: function() {
+                    return false
+                },
+                isStateMaximized: function() {
+                    return false
+                },
+                isStatePopUp: function() {
+                    return false
+                }
+            },
+            PropsValues: {
+                NTLM_AUTH_ENABLED: false
+            }
+        };
+        var themeDisplay = Liferay.ThemeDisplay;
+        Liferay.AUI = {
+            getAvailableLangPath: function() {
+                return "/"
+            },
+            getCombine: function() {
+                return true
+            },
+            getComboPath: function() {
+                return "/combo/?browserId=firefox&minifierType=&languageId=en_US&b=6210&t=1632252785000&"
+            },
+            getFilter: function() {
+                return "min"
+            },
+            getJavaScriptRootPath: function() {
+                return "/html/js"
+            },
+            getLangPath: function() {
+                return "aui_lang.jsp?browserId=firefox&themeId=noa_WAR_noatheme&colorSchemeId=01&minifierType=js&languageId=en_US&b=6210&t=1632252785000"
+            },
+            getStaticResourceURLParams: function() {
+                return "?browserId=firefox&minifierType=&languageId=en_US&b=6210&t=1632252785000"
+            }
+        };
+        Liferay.authToken = "7PPmWdtx";
+        Liferay.currentURL = "\x2ffaq";
+        Liferay.currentURLEncoded = "%2Ffaq";
+    </script>
+    <script src="html/js/barebone.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        Liferay.Portlet.list = ["56_INSTANCE_im7Aup0VlUSt", "noaomasloginportlet_WAR_noaomasportlet", "153_INSTANCE_zzzz", "noabreadcrumbportlet_WAR_noanavigationportlet", "82", "153"];
+    </script>
+    <style type="text/css">
+        @media screen and (max-width:980px) {
+            div.portlet-language button.btn {
+                font-size: 12px;
+                padding: 4px 12px;
+                height: 35px
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            div.portlet-language button.btn {
+                margin: 0
+            }
+            div.portlet-language a.span6 {
+                width: 48% !important;
+                display: inline-block !important
+            }
+        }
+
+        ul.nin-language-list div.portlet-language .btn-group a.span6 {
+            width: 48% !important;
+            display: inline-block !important
+        }
+
+        body.gray-bkg div.nin-body-content {
+            background-color: #eae8e9 !important
+        }
+
+        body.gray-bkg div.nin-body-content div.row-fluid {
+            margin: 0 auto;
+            max-width: 1280px
+        }
+
+        body.centered-tiles div.nin-body-content div.row-fluid {
+            margin: 0 auto;
+            max-width: 1280px
+        }
+
+        html {
+            background: white !important
+        }
+
+        body {
+            background: white !important
+        }
+    </style>
+    <style type="text/css"></style>
+    <script src="noa-theme/js/lib/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/jquery.dialogoptions.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/jquery.hoverintent.min.js" type="text/javascript"></script>
+    <script src="noa-theme/js/polyfills.js" type="text/javascript"></script>
+    <script src="noa-theme/js/custom_noa.js" type="text/javascript"></script>
+    <script src="noa-theme/js/mobile_nav.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/jquery.datatables.min.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/i18n/datepicker-en_us.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/i18n/datepicker-ja_jp.js" type="text/javascript"></script>
+    <script src="noa-theme/js/lib/jquery.timepicker.min.js" type="text/javascript"></script>
+    <script src="noa-theme/js/semantic.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function getLocalizedDirtyFormAlert() {
+            return "You may have unsaved data on this page. Are you sure you wish to navigate away without saving?"
+        };
+    </script>
+</head>
+
+<body class=" yui3-skin-sam controls-visible signed-out public-page site dockbar-split ">
+    <!-- ACTION BAR -->
+    <div class="nin-action-bar">
+        <div id="wrapper" class="container-fluid"> <a class="mario" href="index.html" title="Back to the Home Page"></a>
+            <div id="banner" role="banner">
+                <div class="language-menu">
+                    <div class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language " id="p_p_id_82_">
+                        <div class="portlet-borderless-container" style="">
+                            <div class="portlet-body">
+                                <div class="container-fluid">
+                                    <div class="row-fluid">
+                                        <div class="btn-group span12" data-toggle="buttons-radio"> <a class="nin-nav-button" href="jp/faq.html"> <button type="button" class="btn span12 "> 日本語 </button> </a> <a class="nin-nav-button" href="#"> <button type="button" class="btn span12 active"> English </button> </a>                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TOP NAVIGATION -->
+    <div class="nin-top-nav">
+        <div id="nin-site-header" class="container-fluid">
+            <div class="row-fluid">
+                <div class="nin-site-title span3"> <a class="logo default-logo" href="index.html" title="Back to the Home Page"><img class="nintendo" src="../noa-theme/images/bkg/nintendo.png" width="122" height="30" alt="Nintendo" /></a> </div>
+                <div id="navbar" class="span9 nin-public-nav">
+                    <div class="nin-portal-nav sort-pages modify-pages site-navigation" id="navigation" role="navigation">
+                        <div class="mobile-nav hidden-desktop"> <button class="mobile-icon">Menu &#9776;</button> <button class="mobile-close">&#735;</button> </div>
+                        <div class="navbar-inner nin-vertical-nav-elements"> <span class="nin-main-nav-title hidden-desktop">Main Navigation</span>
+                            <ul aria-label="Site Pages" class="nav navbar-nav" role="menubar">
+                                <li><a href="the-process.html"><span>The Process</span></a></li>
+                                <li><a href="tools.html"><span>Tools / Middleware</span></a></li>
+                                <li><a href="faq.html"><span>FAQ</span></a></li>
+                                <li class="hidden-desktop"><a href="register.html"><span>Register</span></a></li>
+                                <li class="hidden-desktop"><a href="../ndid/login.html"
+                                        rel="nofollow"><span>Sign In</span></a></li>
+                            </ul>
+                            <div class="nin-sign-in visible-desktop">
+                                <ul aria-label="Site Pages" class="nav navbar-nav" role="menubar">
+                                    <li><a href="register.html"><span>Register</span></a></li>
+                                </ul> <a href="../ndid/login.html"
+                                    rel="nofollow" class="sign-in">Sign In</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BREADCRUMB -->
+    <div class="nin-global-breadcrumb">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="portlet-boundary portlet-boundary_noabreadcrumbportlet_WAR_noanavigationportlet_ portlet-static portlet-static-end portlet-borderless noa-breadcrumb " id="p_p_id_noabreadcrumbportlet_WAR_noanavigationportlet_">
+                        <div class="portlet-borderless-container" style="">
+                            <div class="portlet-body">
+                                <ul class="nin-breadcrumb nin-public-breadcrumb">
+                                    <li class="dropdown "> <a class="dropdown-toggle" href="index.html"> <span> Homepage </span> </a> </li>
+                                    <li class="dropdown selected"> <a class="dropdown-toggle" data-toggle="dropdown" href="web/development/faq.html"> <span> FAQ </span> <i class="icon-caret-down"></i> </a>
+                                        <ul class="dropdown-menu">
+                                            <li class=""> <a href="web/development/the-process.html"> <span> The Process </span> </a> </li>
+                                            <li class=""> <a href="web/development/tools.html"> <span> Tools / Middleware </span> </a> </li>
+                                            <li class="selected"> <a href="web/development/faq.html"> <span> FAQ </span> </a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BODY CONTENT & VERTICAL NAVIGATION -->
+    <div class="container-fluid nin-body-content">
+        <div id="content-outside-wrapper" class="row-fluid">
+            <div id="content-wrapper">
+                <div class="columns-1" id="main-content" role="main">
+                    <div class="portlet-layout row-fluid">
+                        <div class="portlet-column portlet-column-only span12" id="column-1">
+                            <div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-1">
+                                <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content " id="p_p_id_56_INSTANCE_im7Aup0VlUSt_">
+                                    <div class="portlet-borderless-container" style="">
+                                        <div class="portlet-body">
+                                            <div class="journal-content-article">
+                                                <style type="text/css">
+                                                    #public-home-wrapper {
+                                                        margin: -50px -20px -20px;
+                                                        font-family: 'Lato', sans-serif;
+                                                        font-size: 16px
+                                                    }
+
+                                                    #public-home-wrapper .nin-body-content {
+                                                        padding-bottom: 0 !important
+                                                    }
+
+                                                    #public-home-wrapper a {
+                                                        color: #39f;
+                                                        font-weight: 700
+                                                    }
+
+                                                    #public-home-wrapper .row-gray {
+                                                        background-color: #eee
+                                                    }
+
+                                                    #public-home-wrapper .top-banner {
+                                                        width: 100%;
+                                                        min-height: 580px;
+                                                        padding: 80px 40px;
+                                                        color: #FFF;
+                                                        background-color: #333
+                                                    }
+
+                                                    #public-home-wrapper #home-banner {
+                                                        min-height: 500px;
+                                                        padding: 80px 40px;
+                                                        color: #FFF;
+                                                        background: url('../documents/23933/747462/banner-hyrule.png') no-repeat;
+                                                        background-size: cover
+                                                    }
+
+                                                    #public-home-wrapper #home-banner .btn-primary {
+                                                        font-size: 20px;
+                                                        padding: .75em 1.5em;
+                                                        margin-top: 1em
+                                                    }
+
+                                                    #public-home-wrapper #steps-banner {
+                                                        background: #969da9 url('../documents/23933/747462/icon-color-mushroom.png') no-repeat right 50px bottom 30px;
+                                                        background-size: 10%;
+                                                        min-height: 200px
+                                                    }
+
+                                                    #public-home-wrapper #middleware-banner {
+                                                        background: #969da9 url('../documents/23933/747462/icon-spring.png') no-repeat right 50px bottom 30px;
+                                                        background-size: 10%;
+                                                        min-height: 200px
+                                                    }
+
+                                                    #public-home-wrapper #faq-banner {
+                                                        background: #969da9 url('../documents/23933/747462/icon-qblock2.png') no-repeat right 30px bottom 20px;
+                                                        background-size: 10%;
+                                                        min-height: 300px
+                                                    }
+
+                                                    #public-home-wrapper #home-banner p {
+                                                        font-weight: 300;
+                                                        font-size: 24px;
+                                                        line-height: 1.25em;
+                                                        margin-bottom: 1em
+                                                    }
+
+                                                    #public-home-wrapper .top-banner p {
+                                                        color: #FFF;
+                                                        width: 50%;
+                                                        font-size: 20px;
+                                                        line-height: 1.25em;
+                                                        text-shadow: 1px 1px 0 #000
+                                                    }
+
+                                                    #public-home-wrapper .top-banner h2 {
+                                                        font-weight: 400;
+                                                        font-size: 48px;
+                                                        margin-bottom: .75em;
+                                                        color: #FFF;
+                                                        line-height: 1em;
+                                                        text-shadow: 1px 1px 0 #000
+                                                    }
+
+                                                    #public-home-wrapper #middleware-banner p,
+                                                    #public-home-wrapper #middleware-banner h2,
+                                                    #public-home-wrapper #steps-banner p,
+                                                    #public-home-wrapper #steps-banner h2,
+                                                    #public-home-wrapper #faq-banner p,
+                                                    #public-home-wrapper #faq-banner h2 {
+                                                        color: #FFF;
+                                                        text-shadow: none
+                                                    }
+
+                                                    #public-home-wrapper h3 {
+                                                        margin: 0 0 2em;
+                                                        font-weight: 300;
+                                                        font-size: 28px;
+                                                        letter-spacing: .1em
+                                                    }
+
+                                                    #public-home-wrapper h3 span {
+                                                        font-weight: 400;
+                                                        font-size: 16px;
+                                                        padding: 1em 1em .25em 1.25em;
+                                                        margin-left: .75em;
+                                                        border-left: 1px solid #000;
+                                                        letter-spacing: 0;
+                                                        color: #333
+                                                    }
+
+                                                    #public-home-wrapper h4 {
+                                                        color: #333;
+                                                        font-weight: 400;
+                                                        font-size: 22px
+                                                    }
+
+                                                    #public-home-wrapper h5 {
+                                                        font-size: 18px
+                                                    }
+
+                                                    #public-home-wrapper #sec-create p {
+                                                        padding: .25em 1em
+                                                    }
+
+                                                    #public-home-wrapper #sec-devportal .content {
+                                                        background-color: #FFF;
+                                                        padding: 1em
+                                                    }
+
+                                                    #public-home-wrapper #sec-devportal img {
+                                                        width: 100%;
+                                                        border-bottom: 1px solid #e1e1e1
+                                                    }
+
+                                                    #public-home-wrapper #sec-platform .platforms {
+                                                        width: 49%;
+                                                        margin-left: 0 !important;
+                                                        padding: 2em
+                                                    }
+
+                                                    #public-home-wrapper #sec-platform #platform-3ds {
+                                                        background-color: #c19099;
+                                                        margin-right: 1%
+                                                    }
+
+                                                    #public-home-wrapper #sec-platform #platform-wiiu {
+                                                        background-color: #7ebaf2;
+                                                        margin-left: 1%
+                                                    }
+
+                                                    #public-home-wrapper #sec-platform h4 {
+                                                        color: #000;
+                                                        font-size: 30px;
+                                                        font-weight: 300
+                                                    }
+
+                                                    #public-home-wrapper #sec-platform p {
+                                                        font-weight: 300;
+                                                        color: #000;
+                                                        padding-bottom: 1em
+                                                    }
+
+                                                    #public-home-wrapper #sec-cta p {
+                                                        font-size: 18px;
+                                                        color: #666;
+                                                        font-weight: 300;
+                                                        margin-bottom: 2em
+                                                    }
+
+                                                    #public-home-wrapper #sec-platform,
+                                                    #public-home-wrapper #sec-devportal,
+                                                    #public-home-wrapper #sec-create,
+                                                    #public-home-wrapper #sec-cta,
+                                                    #public-home-wrapper #sec-steps,
+                                                    #public-home-wrapper .row-nin {
+                                                        padding: 3em 0 4em
+                                                    }
+
+                                                    #public-home-wrapper ol.faq {
+                                                        list-style: none;
+                                                        margin: 0;
+                                                        padding: 0
+                                                    }
+
+                                                    #public-home-wrapper #sec-steps ol li {
+                                                        padding-bottom: 1em;
+                                                        font-size: 20px
+                                                    }
+
+                                                    #public-home-wrapper #sec-steps ol li h5 {
+                                                        display: inline-block;
+                                                        font-size: 20px;
+                                                        font-weight: 600
+                                                    }
+
+                                                    #public-home-wrapper #sec-steps ol li p {
+                                                        font-size: 16px
+                                                    }
+
+                                                    #public-home-wrapper .flex-area {
+                                                        display: flex
+                                                    }
+
+                                                    #public-home-wrapper #sec-devportal .flex-area .span3 {
+                                                        background-color: #FFF
+                                                    }
+
+                                                    #public-home-wrapper #sec-news {
+                                                        background-color: #999
+                                                    }
+
+                                                    #public-home-wrapper #sec-news p {
+                                                        color: #FFF;
+                                                        padding: 1em 3em .75em
+                                                    }
+
+                                                    .aui form {
+                                                        margin-bottom: -15px
+                                                    }
+
+                                                    @media only screen and (max-width:767px) {
+                                                        #public-home-wrapper h3 span {
+                                                            display: none
+                                                        }
+                                                        #public-home-wrapper .top-banner p {
+                                                            width: 100%
+                                                        }
+                                                        #public-home-wrapper h3 {
+                                                            margin: 0 2em;
+                                                            text-align: center;
+                                                            padding-bottom: 2em
+                                                        }
+                                                        #public-home-wrapper .flex-area {
+                                                            display: block
+                                                        }
+                                                        #public-home-wrapper #sec-platform .platforms {
+                                                            width: 100%
+                                                        }
+                                                        #public-home-wrapper .top-banner p {
+                                                            width: 100%
+                                                        }
+                                                        #public-home-wrapper #sec-steps ol li {
+                                                            padding: 0 1em 1em
+                                                        }
+                                                        #public-home-wrapper #middleware-banner {
+                                                            background-image: none
+                                                        }
+                                                        #public-home-wrapper .row-nin {
+                                                            padding: 0 1em 1em
+                                                        }
+                                                    }
+                                                </style>
+                                                <div id="public-home-wrapper">
+                                                    <div class="row-fluid">
+                                                        <div class="span12 top-banner" id="faq-banner">
+                                                            <div class="banner-copy">
+                                                                <h2>Frequently Asked Questions</h2>
+                                                                <p>Got questions? We got some answers!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-fluid" id="sec-steps">
+                                                        <div class="span1">&nbsp;</div>
+                                                        <div class="span10">
+                                                            <ol class="faq">
+                                                                <li>
+                                                                    <h5>Do I need to be of legal age to register?</h5>
+                                                                    <p>Yes. Unfortunately, minors cannot register for the Nintendo Developer Portal.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <h5>Do I have to be a company or have a certain level of development experience?</h5>
+                                                                    <p>No, the Nintendo Developer Portal is for anyone interested in developing software for Nintendo platforms. No prior development experience is required.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <h5>How does publishing my content on the Nintendo eShop work? Who gets to control the price, release date and promotional materials?</h5>
+                                                                    <p>As the developer, the price, release date and content are all set by you.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <h5>Is this Nintendo’s indie developer program?</h5>
+                                                                    <p>No, this is Nintendo’s one and only developer program. The Nintendo Developer Portal is for all Nintendo developers regardless of their size or experience.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <h5>How much does it cost to develop on Nintendo platforms?</h5>
+                                                                    <p>Registering for the portal and downloading the tools is completely free.<br /> Also, if you plan to release a digital only title, you can use the IARC system to retrieve the age rating
+                                                                        for no fee, which will allow you to publish in all the participating countries.<br /> All that is left is the cost of acquiring development hardware: you will find more information
+                                                                        on this inside the portal.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <h5>Can I use this portal to release a physical product or is this just for digital titles?</h5>
+                                                                    <p>Yes, this is Nintendo’s one and only developer program, if you’re interested in retail publishing then you’re in the right place too.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <h5>Can I work from home?</h5>
+                                                                    <p>Yes, we accept home offices, you don’t need a business address.</p>
+                                                                </li>
+                                                            </ol>
+                                                        </div>
+                                                        <div class="span1">&nbsp;</div>
+                                                    </div>
+                                                    <div class="row-fluid row-gray" id="sec-cta">
+                                                        <div class="span1">&nbsp;</div>
+                                                        <div class="span10 text-center">
+                                                            <p>Ready to create a title for Nintendo? Get started now!</p>
+                                                            <p><input class="btn btn-primary" onclick="location.href='register.html'" type="button" value="Register for the Nintendo Developer Portal" /></p>
+                                                        </div>
+                                                        <div class="span1">&nbsp;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="entry-links"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-boundary portlet-boundary_1_WAR_kaleodesignerportlet_ portlet-static portlet-static-end portlet-borderless kaleo-designer-portlet " id="p_p_id_1_WAR_kaleodesignerportlet_"> </div>
+                <form action="#" id="hrefFm" method="post" name="hrefFm"> <span></span> </form>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="nin-mega-footer">
+        <div id="footer-wrapper" class="container-fluid">
+            <div id="footer" role="contentinfo" class="row-fluid">
+                <ul>
+                    <li><a href="web/development/contact.html">Contact</a></li>
+                    <li><a href="web/development/privacy.html">Privacy Notice</a></li>
+                    <li class="copyright">&copy; 2021 Nintendo</li>
+                </ul>
+            </div>
+        </div>
+    </div> <span id="required-asterisk" class="hidden"> <div class="req-note-asterisk req-note-asterisk-handle">An asterisk <span class='label-required'>*</span> denotes required field</div>
+    </span>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var a = getCookie("trackEssentialCookie");
+            if (a != "enabled" && a != "disabled" && true) {
+                window.onscroll = function() {
+                    window.scrollTo(0, 0)
+                };
+                document.body.style.overflow = "hidden";
+                $(".cookie-banner").show()
+            }
+        });
+
+        function closeCookieBanner() {
+            document.body.style.overflow = "";
+            window.onscroll = function() {};
+            $(".cookie-overlay").hide();
+            setCookie("trackEssentialCookie", "enabled", 365)
+        }
+
+        function rejectAndCloseCookieBanner() {
+            document.body.style.overflow = "";
+            window.onscroll = function() {};
+            $(".cookie-overlay").hide();
+            setCookie("trackEssentialCookie", "enabled", 365);
+            setCookie("tGoogleAnalytics", "disabled", 365)
+        }
+
+        function getCookie(d) {
+            var b = d + "=";
+            var a = document.cookie.split(";");
+            for (var e = 0; e < a.length; e++) {
+                var f = a[e];
+                while (f.charAt(0) == " ") {
+                    f = f.substring(1)
+                }
+                if (f.indexOf(b) == 0) {
+                    return f.substring(b.length, f.length)
+                }
+            }
+            return ""
+        }
+
+        function setCookie(b, f, c) {
+            var e = new Date();
+            e.setTime(e.getTime() + (c * 24 * 60 * 60 * 1000));
+            var a = "expires=" + e.toUTCString();
+            document.cookie = b + "=" + f + ";" + a + ";path=/"
+        };
+    </script>
+</body>
+<script src="noa-omas-portlet/js/main.js" type="text/javascript"></script>
+<script src="html/portlet/workflow_tasks/js/main.js" type="text/javascript"></script>
+<script type="text/javascript">
+    Liferay.Util.addInputFocus();
+</script>
+<script type="text/javascript">
+    Liferay.Portlet.onLoad({
+        canEditTitle: false,
+        columnPos: 0,
+        isStatic: "end",
+        namespacedId: "p_p_id_56_INSTANCE_im7Aup0VlUSt_",
+        portletId: "56_INSTANCE_im7Aup0VlUSt",
+        refreshURL: "\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d4017936\x26p_p_id\x3d56_INSTANCE_im7Aup0VlUSt\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Ffaq"
+    });
+    Liferay.Portlet.onLoad({
+        canEditTitle: false,
+        columnPos: 0,
+        isStatic: "end",
+        namespacedId: "p_p_id_82_",
+        portletId: "82",
+        refreshURL: "\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d4017936\x26p_p_id\x3d82\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Ffaq"
+    });
+    $(document).ready(function() {
+        $("#main-content .portlet-layout .nin-body-with-vertical-nav .nin-page-title .page-title").text("FAQ")
+    });
+    Liferay.Portlet.onLoad({
+        canEditTitle: false,
+        columnPos: 0,
+        isStatic: "end",
+        namespacedId: "p_p_id_noabreadcrumbportlet_WAR_noanavigationportlet_",
+        portletId: "noabreadcrumbportlet_WAR_noanavigationportlet",
+        refreshURL: "\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d4017936\x26p_p_id\x3dnoabreadcrumbportlet_WAR_noanavigationportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Ffaq"
+    });
+    Liferay.provide(Liferay.Util, "openKaleoDesignerPortlet", function(c) {
+        var b = AUI();
+        var e = Liferay.PortletURL.createURL("faq.html");
+        e.setParameter("mvcPath", "/");
+        e.setParameter("availableFields", c.availableFields);
+        e.setParameter("availablePropertyModels", c.availablePropertyModels);
+        e.setParameter("ddmStructureId", c.ddmStructureId);
+        e.setParameter("draftVersion", c.draftVersion);
+        e.setParameter("kaleoProcessId", c.kaleoProcessId);
+        e.setParameter("name", c.name);
+        e.setParameter("openerWindowName", c.openerWindowName);
+        e.setParameter("portletResourceNamespace", c.portletResourceNamespace);
+        e.setParameter("propertiesSaveCallback", c.propertiesSaveCallback);
+        e.setParameter("refreshOpenerOnClose", c.refreshOpenerOnClose);
+        e.setParameter("saveCallback", c.saveCallback);
+        e.setParameter("version", c.version);
+        e.setWindowState("pop_up");
+        c.uri = e.toString();
+        var d = c.dialog;
+        if (!d) {
+            var f = b.one(Liferay.Util.getOpener()).get("region");
+            d = {
+                destroyOnHide: true
+            };
+            c.dialog = d
+        }
+        if (!("align" in d)) {
+            d.align = Liferay.Util.Window.ALIGN_CENTER
+        }
+        var a = c.dialogIframe;
+        if (!a) {
+            a = {
+                closeOnEscape: false
+            };
+            c.dialogIframe = a
+        }
+        Liferay.Util.openWindow(c)
+    }, ["liferay-portlet-url"]);
+    Liferay.Portlet.onLoad({
+        canEditTitle: false,
+        columnPos: 0,
+        isStatic: "end",
+        namespacedId: "p_p_id_1_WAR_kaleodesignerportlet_",
+        portletId: "1_WAR_kaleodesignerportlet",
+        refreshURL: "\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d4017936\x26p_p_id\x3d1_WAR_kaleodesignerportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Ffaq"
+    });
+    AUI().use("aui-base", "liferay-menu", "liferay-notice", "liferay-poller", "liferay-session", function(a) {
+        (function() {
+            Liferay.Util.addInputType();
+            Liferay.Portlet.ready(function(b, c) {
+                Liferay.Util.addInputType(c)
+            });
+            if (a.UA.mobile) {
+                Liferay.Util.addInputCancel()
+            }
+        })();
+        (function() {
+            new Liferay.Menu();
+            var b = Liferay.Data.notices;
+            for (var c = 1; c < b.length; c++) {
+                new Liferay.Notice(b[c])
+            }
+        })();
+        (function() {
+            Liferay.Session = new Liferay.SessionBase({
+                autoExtend: true,
+                sessionLength: 240,
+                redirectOnExpire: true,
+                redirectUrl: "index.html",
+                warningLength: 3
+            })
+        })()
+    });
+</script>
+<script src="noa-theme/js/main.js" type="text/javascript"></script>
+
+</html>

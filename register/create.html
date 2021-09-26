@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html class="aui ltr nin-public" dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/html">
+   <head>
+      <script src="google/recaptcha/api.js" async defer></script>
+      <title>Tools / Middleware - Nintendo Developer Portal</title>
+      <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+      <link href="noa-theme/images/favicon.ico" rel="Shortcut Icon" />
+      <link rel="apple-touch-icon" href="webclip.png">
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:title" content="Nintendo Developer Portal">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="ogp.jpg">
+      <meta property="og:site_name" content="Nintendo Developer Portal">
+      <meta property="og:description" content="Nintendo Developer Portal">
+      <link class="lfr-css-file" href="../noa-theme/css/aui.css" rel="stylesheet" type="text/css" />
+      <link href="../html/css/main.css" rel="stylesheet" type="text/css" />
+      <link href="../html/portlet/journal_content/css/main.css" rel="stylesheet" type="text/css" />
+      <link href="../html/portlet/staging_bar/css/main.css" rel="stylesheet" type="text/css" />
+      <link href="../noa-omas-portlet/css/main.css" rel="stylesheet" type="text/css" />
+      <link href="../html/portlet/asset_publisher/css/main.css" rel="stylesheet" type="text/css" />
+      <link href="../html/portlet/workflow_definitions/css/main.css" rel="stylesheet" type="text/css" />
+      <link href="../html/portlet/bookmarks/css/main.css" rel="stylesheet" type="text/css" />
+      <link class="lfr-css-file" href="../noa-theme/css/main.css" rel="stylesheet" type="text/css" />
+      <script src="../noa-omas-portlet/js/main.js" type="text/javascript"></script>
+      <script src="../html/portlet/workflow_tasks/js/main.js" type="text/javascript"></script>
+      <script type="text/javascript">
+         var Liferay = {
+             Browser: {
+                 acceptsGzip: function() {
+                     return true
+                 },
+                 getMajorVersion: function() {
+                     return 75
+                 },
+                 getRevision: function() {
+                     return "75.0"
+                 },
+                 getVersion: function() {
+                     return "75.0"
+                 },
+                 isAir: function() {
+                     return false
+                 },
+                 isChrome: function() {
+                     return false
+                 },
+                 isFirefox: function() {
+                     return true
+                 },
+                 isGecko: function() {
+                     return true
+                 },
+                 isIe: function() {
+                     return false
+                 },
+                 isIphone: function() {
+                     return false
+                 },
+                 isLinux: function() {
+                     return false
+                 },
+                 isMac: function() {
+                     return true
+                 },
+                 isMobile: function() {
+                     return false
+                 },
+                 isMozilla: function() {
+                     return true
+                 },
+                 isOpera: function() {
+                     return false
+                 },
+                 isRtf: function() {
+                     return true
+                 },
+                 isSafari: function() {
+                     return false
+                 },
+                 isSun: function() {
+                     return false
+                 },
+                 isWap: function() {
+                     return false
+                 },
+                 isWapXhtml: function() {
+                     return false
+                 },
+                 isWebKit: function() {
+                     return false
+                 },
+                 isWindows: function() {
+                     return false
+                 },
+                 isWml: function() {
+                     return false
+                 }
+             },
+             Data: {
+                 NAV_SELECTOR: "#navigation",
+                 isCustomizationView: function() {
+                     return false
+                 },
+                 notices: [null]
+             },
+             ThemeDisplay: {
+                 getLayoutId: function() {
+                     return "54"
+                 },
+                 getLayoutURL: function() {
+                     return "create.html"
+                 },
+                 getParentLayoutId: function() {
+                     return "51"
+                 },
+                 isPrivateLayout: function() {
+                     return "false"
+                 },
+                 isVirtualLayout: function() {
+                     return false
+                 },
+                 getBCP47LanguageId: function() {
+                     return "en-US"
+                 },
+                 getCDNBaseURL: function() {
+                     return "../index.html"
+                 },
+                 getCDNDynamicResourcesHost: function() {
+                     return ""
+                 },
+                 getCDNHost: function() {
+                     return ""
+                 },
+                 getCompanyId: function() {
+                     return "10154"
+                 },
+                 getCompanyGroupId: function() {
+                     return "10192"
+                 },
+                 getDefaultLanguageId: function() {
+                     return "en_US"
+                 },
+                 getDoAsUserIdEncoded: function() {
+                     return ""
+                 },
+                 getLanguageId: function() {
+                     return "en_US"
+                 },
+                 getParentGroupId: function() {
+                     return "23933"
+                 },
+                 getPathContext: function() {
+                     return ""
+                 },
+                 getPathImage: function() {
+                     return "/image"
+                 },
+                 getPathJavaScript: function() {
+                     return "/html/js"
+                 },
+                 getPathMain: function() {
+                     return "/c"
+                 },
+                 getPathThemeImages: function() {
+                     return "https://developer.nintendo.com/noa-theme/images"
+                 },
+                 getPathThemeRoot: function() {
+                     return "/noa-theme"
+                 },
+                 getPlid: function() {
+                     return "691506"
+                 },
+                 getPortalURL: function() {
+                     return "../index.html"
+                 },
+                 getPortletSetupShowBordersDefault: function() {
+                     return false
+                 },
+                 getScopeGroupId: function() {
+                     return "23933"
+                 },
+                 getScopeGroupIdOrLiveGroupId: function() {
+                     return "23933"
+                 },
+                 getSessionId: function() {
+                     return ""
+                 },
+                 getSiteGroupId: function() {
+                     return "23933"
+                 },
+                 getURLControlPanel: function() {
+                     return "/group/control_panel?refererPlid=691506"
+                 },
+                 getURLHome: function() {
+                     return "../index.html"
+                 },
+                 getUserId: function() {
+                     return "10158"
+                 },
+                 getUserName: function() {
+                     return ""
+                 },
+                 isAddSessionIdToURL: function() {
+                     return false
+                 },
+                 isFreeformLayout: function() {
+                     return false
+                 },
+                 isImpersonated: function() {
+                     return false
+                 },
+                 isSignedIn: function() {
+                     return false
+                 },
+                 isStateExclusive: function() {
+                     return false
+                 },
+                 isStateMaximized: function() {
+                     return false
+                 },
+                 isStatePopUp: function() {
+                     return false
+                 }
+             },
+             PropsValues: {
+                 NTLM_AUTH_ENABLED: false
+             }
+         };
+         var themeDisplay = Liferay.ThemeDisplay;
+         Liferay.AUI = {
+             getAvailableLangPath: function() {
+                 return "/"
+             },
+             getCombine: function() {
+                 return true
+             },
+             getComboPath: function() {
+                 return "/combo/?browserId=firefox&minifierType=&languageId=en_US&b=6210&t=1632252785000&"
+             },
+             getFilter: function() {
+                 return "min"
+             },
+             getJavaScriptRootPath: function() {
+                 return "/html/js"
+             },
+             getLangPath: function() {
+                 return "aui_lang.jsp?browserId=firefox&themeId=noa_WAR_noatheme&colorSchemeId=01&minifierType=js&languageId=en_US&b=6210&t=1632252785000"
+             },
+             getStaticResourceURLParams: function() {
+                 return "?browserId=firefox&minifierType=&languageId=en_US&b=6210&t=1632252785000"
+             }
+         };
+         Liferay.authToken = "1gZQRXR2";
+         Liferay.currentURL = "\x2fregister\x2fcreate";
+         Liferay.currentURLEncoded = "%2Fregister%2Fcreate";
+      </script>
+      <script src="../html/js/barebone.js" type="text/javascript"></script>
+      <script type="text/javascript">
+         Liferay.Portlet.list = ["noaregistrationportlet_WAR_noaomasportlet", "noabreadcrumbportlet_WAR_noanavigationportlet", "noaomasloginportlet_WAR_noaomasportlet", "153_INSTANCE_zzzz", "82", "153"];
+      </script>
+      <style type="text/css">
+         .nin-confirmation-info.nin-warning:before {
+         color: #fff;
+         font-size: 18px;
+         position: absolute;
+         font-family: FontAwesome;
+         top: 22px;
+         left: 22px;
+         content: "\f12a";
+         background-color: #ff7d00;
+         padding: 8px 16px
+         }
+         .nin-confirmation-info.nin-warning {
+         width: calc(100% - 108px);
+         margin: 0;
+         background-color: #fff;
+         min-height: 40px;
+         padding: 20px 20px 20px 86px !important;
+         word-wrap: break-word;
+         position: relative
+         }
+         .nin-warning p {
+         color: #000 !important
+         }
+         .flex {
+         display: block !important
+         }
+         .button-holder.step1 {
+         margin: 0 !important
+         }
+         @media screen and (max-width:980px) {
+         div.portlet-language button.btn {
+         font-size: 12px;
+         padding: 4px 12px;
+         height: 35px
+         }
+         }
+         @media screen and (max-width:768px) {
+         div.portlet-language button.btn {
+         margin: 0
+         }
+         div.portlet-language a.span6 {
+         width: 48% !important;
+         display: inline-block !important
+         }
+         }
+         ul.nin-language-list div.portlet-language .btn-group a.span6 {
+         width: 48% !important;
+         display: inline-block !important
+         }
+         body.gray-bkg div.nin-body-content {
+         background-color: #eae8e9 !important
+         }
+         body.gray-bkg div.nin-body-content div.row-fluid {
+         margin: 0 auto;
+         max-width: 1280px
+         }
+         body.centered-tiles div.nin-body-content div.row-fluid {
+         margin: 0 auto;
+         max-width: 1280px
+         }
+         html {
+         background: white !important
+         }
+         body {
+         background: white !important
+         }
+         .nin-public-info-page #content-outside-wrapper {
+         max-width: 1200px;
+         margin: 0 auto
+         }
+         .nin-public-breadcrumb {
+         display: none
+         }
+         .nin-public-boxlink {
+         position: relative;
+         cursor: pointer;
+         color: #5f5f5f;
+         max-width: 300px;
+         padding-bottom: 40px;
+         margin: 0 auto
+         }
+         .nin-public-boxlink:hover {
+         color: #2576bc !important;
+         border-color: #2576bc !important
+         }
+         .nin-public-boxlink:hover .box-image {
+         opacity: 1
+         }
+         .nin-public-boxlink:hover .box-image {
+         opacity: .7
+         }
+         .nin-public-boxlink .box-title {
+         font-size: 20px !important;
+         font-weight: bold !important;
+         margin-bottom: 20px !important;
+         color: inherit !important
+         }
+         .nin-public-boxlink .box-image {
+         margin-bottom: 2px !important;
+         text-align: center
+         }
+         .nin-public-boxlink .box-text {
+         color: #404040 !important
+         }
+         .nin-public-boxlink .box-more {
+         font-weight: bold !important;
+         position: absolute;
+         margin: 0;
+         bottom: 5px;
+         right: 5px;
+         color: inherit !important
+         }
+         .nin-public-categories {
+         width: auto !important;
+         max-width: 1280px;
+         margin-top: 40px;
+         margin-bottom: 50px
+         }
+         .nin-public-categories .nin-public-boxlink {
+         color: #787878;
+         width: auto !important;
+         max-width: 350px !important;
+         min-height: 350px !important;
+         border-bottom: 1px solid #ccc;
+         margin-top: 30px;
+         margin-bottom: 30px;
+         margin-left: 57px !important;
+         margin-right: 57px !important
+         }
+         .nin-public-categories .nin-public-boxlink.first {
+         margin-left: 0 !important
+         }
+         .nin-public-categories .nin-public-boxlink.last {
+         margin-right: 0 !important
+         }
+         .nin-public-categories .nin-public-boxlink p.box-title {
+         font-size: 22px !important;
+         text-align: center;
+         margin-bottom: 10px !important;
+         color: inherit
+         }
+         .nin-public-categories .nin-public-boxlink p.box-text {
+         margin-top: 10px;
+         color: #999 !important
+         }
+         .nin-public-categories .footer-text {
+         color: #787878 !important;
+         font-size: 22px !important;
+         font-weight: bold !important;
+         text-align: center;
+         margin-top: 40px
+         }
+         .nin-public-categories .footer-text a {
+         font-size: 22px !important;
+         font-weight: bold !important
+         }
+         @media screen and (max-width:1420px) {
+         .nin-public-categories {
+         max-width: 980px;
+         padding-left: 45px;
+         padding-right: 45px;
+         margin-top: 20px
+         }
+         .nin-public-categories .nin-public-boxlink {
+         max-width: 29% !important;
+         margin-left: 20px !important;
+         margin-right: 20px !important
+         }
+         }
+         @media screen and (max-width:768px) {
+         .nin-public-categories .nin-public-boxlink {
+         width: 100% !important;
+         max-width: 100% !important;
+         margin-top: 20px;
+         margin-left: 0 !important;
+         margin-right: 0 !important;
+         min-height: 0 !important
+         }
+         }
+         .nin-public-header {
+         font-size: 28px !important;
+         color: #333 !important;
+         line-height: normal !important
+         }
+         .nin-public-subheader {
+         font-size: 16px !important;
+         font-weight: 700 !important
+         }
+         .nin-public-content {
+         font-size: 13px !important
+         }
+         .nin-public-imagecontainer {
+         text-align: center !important;
+         margin-top: 50px !important
+         }
+         .nin-public-sidebar {
+         background-color: #eae8e9;
+         height: 100%;
+         padding: 30px;
+         line-height: 20px
+         }
+         .nin-public-sidebar .divider {
+         width: 300px;
+         height: 1px;
+         margin: 15px auto 22px;
+         display: block
+         }
+         .nin-public-resourcelist div {
+         overflow: auto;
+         padding-bottom: 20px;
+         margin-bottom: 50px;
+         border-bottom: 1px solid #ccc
+         }
+         .nin-public-resourcelist h3 {
+         font-weight: bold !important;
+         color: #666 !important
+         }
+         .nin-public-resourcelist .resourcelist-image {
+         float: right;
+         margin-top: 15px;
+         margin-left: 30px
+         }
+         .nin-public-resourcelist .resourcelist-link {
+         float: right;
+         font-weight: bold
+         }
+      </style>
+      <style type="text/css"></style>
+      <script src="../noa-theme/js/lib/jquery-ui.min.js" type="text/javascript"></script>
+      <script src="../noa-theme/js/lib/jquery.dialogoptions.js" type="text/javascript"></script>
+      <script src="../noa-theme/js/lib/jquery.hoverintent.min.js" type="text/javascript"></script>
+      <script src="../noa-theme/js/polyfills.js" type="text/javascript"></script>
+      <script src="../noa-theme/js/custom_noa.js" type="text/javascript"></script>
+      <script src="../noa-theme/js/mobile_nav.js" type="text/javascript"></script>
+      <script src="../noa-theme/js/lib/jquery.datatables.min.js" type="text/javascript"></script>
+      <script src="../noa-theme/js/lib/i18n/datepicker-en_us.js" type="text/javascript"></script>
+      <script src="../noa-theme/js/lib/i18n/datepicker-ja_jp.js" type="text/javascript"></script>
+      <script src="../noa-theme/js/lib/jquery.timepicker.min.js" type="text/javascript"></script>
+      <script src="../noa-theme/js/semantic.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+         function getLocalizedDirtyFormAlert() {
+             return "You may have unsaved data on this page. Are you sure you wish to navigate away without saving?"
+         };
+      </script>
+   </head>
+   <body class=" yui3-skin-sam controls-visible signed-out public-page site dockbar-split nin-registration ">
+      <!-- ACTION BAR -->
+      <div class="nin-action-bar">
+         <div id="wrapper" class="container-fluid">
+            <a class="mario" href="../index.html" title="Back to the Home Page"></a>
+            <div id="banner" role="banner">
+               <div class="language-menu">
+                  <div class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language " id="p_p_id_82_">
+                     <div class="portlet-borderless-container" style="">
+                        <div class="portlet-body">
+                           <div class="container-fluid">
+                              <div class="row-fluid">
+                                 <div class="btn-group span12" data-toggle="buttons-radio"> <a class="nin-nav-button" href="../jp/create.html"> <button type="button" class="btn span12 "> 日本語 </button> </a> <a class="nin-nav-button" href="#"> <button type="button" class="btn span12 active"> English </button> </a>                                            </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- TOP NAVIGATION -->
+      <div class="nin-top-nav">
+         <div id="nin-site-header" class="container-fluid">
+            <div class="row-fluid">
+               <div class="nin-site-title span3"> <a class="logo default-logo" href="../index.html" title="Back to the Home Page"><img class="nintendo" src="../noa-theme/images/bkg/nintendo.png" width="122" height="30" alt="Nintendo" /></a> </div>
+               <div id="navbar" class="span9 nin-public-nav">
+                  <div class="nin-portal-nav sort-pages modify-pages site-navigation" id="navigation" role="navigation">
+                     <div class="mobile-nav hidden-desktop"> <button class="mobile-icon">Menu &#9776;</button> <button class="mobile-close">&#735;</button> </div>
+                     <div class="navbar-inner nin-vertical-nav-elements">
+                        <span class="nin-main-nav-title hidden-desktop">Main Navigation</span>
+                        <ul aria-label="Site Pages" class="nav navbar-nav" role="menubar">
+                           <li><a href="../the-process.html"><span>The Process</span></a></li>
+                           <li><a href="../tools.html"><span>Tools / Middleware</span></a></li>
+                           <li><a href="../faq.html"><span>FAQ</span></a></li>
+                           <li class="hidden-desktop"><a href="../register.html"><span>Register</span></a></li>
+                           <li class="hidden-desktop"><a href="login.html"
+                              rel="nofollow"><span>Sign In</span></a></li>
+                        </ul>
+                        <div class="nin-sign-in visible-desktop">
+                           <ul aria-label="Site Pages" class="nav navbar-nav" role="menubar">
+                              <li><a href="../register.html"><span>Register</span></a></li>
+                           </ul>
+                           <a href="login.html"
+                              rel="nofollow" class="sign-in">Sign In</a> 
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- BREADCRUMB -->
+      <div class="nin-global-breadcrumb">
+         <div class="container-fluid">
+            <div class="row-fluid">
+               <div class="span12">
+                  <div class="portlet-boundary portlet-boundary_noabreadcrumbportlet_WAR_noanavigationportlet_ portlet-static portlet-static-end portlet-borderless noa-breadcrumb " id="p_p_id_noabreadcrumbportlet_WAR_noanavigationportlet_">
+                     <div class="portlet-borderless-container" style="">
+                        <div class="portlet-body">
+                           <ul class="nin-breadcrumb nin-public-breadcrumb">
+                              <li class="dropdown "> <a class="dropdown-toggle" href="../web/development/register.html"> <span> Register </span> </a> </li>
+                              <li class="dropdown selected">
+                                 <a class="dropdown-toggle" data-toggle="dropdown" href="../web/development/register/create.html"> <span> Create Account </span> <i class="icon-caret-down"></i> </a>
+                                 <ul class="dropdown-menu">
+                                    <li class=""> <a href="../web/development/register/contact-admin.html"> <span> Contact Admin </span> </a> </li>
+                                    <li class="selected"> <a href="../web/development/register/create.html"> <span> Create Account </span> </a> </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- BODY CONTENT & VERTICAL NAVIGATION -->
+      <div class="container-fluid nin-body-content">
+         <div id="content-outside-wrapper" class="row-fluid">
+            <div id="content-wrapper">
+               <div class="columns-1" id="main-content" role="main">
+                  <div class="portlet-layout row-fluid">
+                     <div class="portlet-column portlet-column-only span12" id="column-1">
+                        <div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-1">
+                           <div class="portlet-boundary portlet-boundary_noaregistrationportlet_WAR_noaomasportlet_ portlet-static portlet-static-end portlet-borderless nin-registration-portlet " id="p_p_id_noaregistrationportlet_WAR_noaomasportlet_">
+                              <div class="portlet-borderless-container" style="">
+                                 <div class="portlet-body">
+                                    <div class="nin-registration-title">
+                                       <div class="nin-page-title">
+                                          <h5>Developer Application</h5>
+                                       </div>
+                                       <section class="nin-page-description">
+                                          <h5>Developer Application</h5>
+                                          <p>Please do not create duplicate accounts. Your organization administrator can create an account for you if your company has already been established. Your existing account may be referred to as an NDID
+                                             or OMAS account.
+                                          </p>
+                                          <p>Please contact <a href="mailto:support@noa.nintendo.com">support@noa.nintendo.com</a> if you need help identifying the administrator for your organization.</p>
+                                       </section>
+                                    </div>
+                                    <div class="nin-confirmation-title">
+                                       <div class="nin-page-title">
+                                          <h5>Review Application</h5>
+                                       </div>
+                                       <div class="alert alert-warning"> <span>Please review the application details before submitting the application.</span> </div>
+                                    </div>
+                                    <form action="../files/n_submitregistration_ddjjnqznmue4igeehktced.html" class="form lfr-dynamic-form " id="_noaregistrationportlet_WAR_noaomasportlet_noaWizardFm" method="post" name="_noaregistrationportlet_WAR_noaomasportlet_noaWizardFm"
+                                       enctype="multipart/form-data">
+                                       <input name="_noaregistrationportlet_WAR_noaomasportlet_formDate" type="hidden" value="1632601657297" /> <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_isIndividual" name="_noaregistrationportlet_WAR_noaomasportlet_isIndividual"
+                                          type="hidden" value="false" /> <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_isAuthorizedUser" name="_noaregistrationportlet_WAR_noaomasportlet_isAuthorizedUser" type="hidden" value=""
+                                          /> <input class="field force-save-address" id="_noaregistrationportlet_WAR_noaomasportlet_forceSaveAddressParam" name="_noaregistrationportlet_WAR_noaomasportlet_forceSaveAddressParam" type="hidden" value="false"
+                                          />
+                                       <div class="nin-top-button-holder">
+                                          <div class="button-holder"> <button class="btn nin-btn nin-btn-secondary back-to-last-step" id="_noaregistrationportlet_WAR_noaomasportlet_final-step-button" onClick="_noaregistrationportlet_WAR_noaomasportlet_goToLastStep(this);"
+                                             type='button'> Edit </button> <button class="btn nin-btn nin-btn-primary margin-left save-submit nin-save-form" id="_noaregistrationportlet_WAR_noaomasportlet_submit-button" onClick="_noaregistrationportlet_WAR_noaomasportlet_submitRegistration(this);"
+                                             type='button'> Submit Application </button> </div>
+                                       </div>
+                                       <div class="nin-registration-type nin-form">
+                                          <div class="nin-form-title">
+                                             <h5>Organization or Individual</h5>
+                                          </div>
+                                          <section class="nin-form-content">
+                                             <div class="step1">
+                                                <p>Select 'Organization' if you are a company, non-profit organization, joint venture, partnership, or government organization. Select 'Individual' if you are an individual or single-person company.
+                                                   Selecting Organization will allow additional users to be established and roles assigned. Individuals are set up with all roles assigned to the registrant.
+                                                </p>
+                                                <div class="row-fluid control-group ">
+                                                   <div class="offset3 span3">
+                                                      <div class="radio"> <label for="_noaregistrationportlet_WAR_noaomasportlet_zzgv"> <input checked class="field"  id="_noaregistrationportlet_WAR_noaomasportlet_zzgv" name="_noaregistrationportlet_WAR_noaomasportlet_regType"  onClick="_noaregistrationportlet_WAR_noaomasportlet_setIsIndividual(false);"  type="radio" value="company"   /> Organization </label>                                                                        </div>
+                                                   </div>
+                                                   <div class="span3">
+                                                      <div class="radio"> <label for="_noaregistrationportlet_WAR_noaomasportlet_dmya"> <input  class="field"  id="_noaregistrationportlet_WAR_noaomasportlet_dmya" name="_noaregistrationportlet_WAR_noaomasportlet_regType"  onClick="_noaregistrationportlet_WAR_noaomasportlet_setIsIndividual(true);"  type="radio" value="individual"   /> Individual </label>                                                                        </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </section>
+                                       </div>
+                                       <div class="nin-organization-details nin-form" id="organization-details">
+                                          <div class="nin-form-title">
+                                             <h5>Organization Information</h5>
+                                          </div>
+                                          <section class="nin-form-content">
+                                             <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_companyName"> Organizational/Legal Name <span class="label-required">*</span> <span class="taglib-icon-help"><img alt="" aria-labelledby="bdfm" onBlur="Liferay.Portal.ToolTip.hide();" onFocus="Liferay.Portal.ToolTip.show(this);" onMouseOver="Liferay.Portal.ToolTip.show(this);" src="../noa-theme/images/portlet/help.png" tabIndex="0" /><span class="hide-accessible tooltip-text" id="bdfm" >If you represent a corporate entity, enter the legal company name as registered, including any suffix such as "llc" or "Inc". If you are an individual, enter your full legal name as recorded on your government-issued ID.</span></span> </label>                                                            <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_companyName" name="_noaregistrationportlet_WAR_noaomasportlet_companyName" type="text" value="" /> </div>
+                                             <div class="control-group form-inline input-text-wrapper">
+                                                <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji"> Organizational/Legal Name (Romaji) </label> <input class="field conditionally-required" id="_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji"
+                                                   name="_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji" type="text" value="" /> 
+                                             </div>
+                                             <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_dbaName"> Doing Business As Name <span class="taglib-icon-help"><img alt="" aria-labelledby="qqeb" onBlur="Liferay.Portal.ToolTip.hide();" onFocus="Liferay.Portal.ToolTip.show(this);" onMouseOver="Liferay.Portal.ToolTip.show(this);" src="../noa-theme/images/portlet/help.png" tabIndex="0" /><span class="hide-accessible tooltip-text" id="qqeb" >This is the name you (or your company) normally go by when doing business, if different from the full legal name. Nintendo will use it when displaying your name to customers.</span></span> </label>                                                            <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_dbaName" name="_noaregistrationportlet_WAR_noaomasportlet_dbaName" type="text" value="" /> </div>
+                                             <div class="control-group form-inline input-text-wrapper">
+                                                <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji"> Doing Business As Name (Romaji) </label> <input class="field conditionally-required" id="_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji"
+                                                   name="_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji" type="text" value="" /> 
+                                             </div>
+                                             <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_addressLine1"> Address Line 1 <span class="label-required">*</span> </label> <input class="field address-part" id="_noaregistrationportlet_WAR_noaomasportlet_addressLine1"
+                                                name="_noaregistrationportlet_WAR_noaomasportlet_addressLine1" type="text" value="" /> </div>
+                                             <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_addressLine2"> Address Line 2 </label> <input class="field address-part" id="_noaregistrationportlet_WAR_noaomasportlet_addressLine2"
+                                                name="_noaregistrationportlet_WAR_noaomasportlet_addressLine2" type="text" value="" /> </div>
+                                             <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_city"> City <span class="label-required">*</span> </label> <input class="field address-part" id="_noaregistrationportlet_WAR_noaomasportlet_city"
+                                                name="_noaregistrationportlet_WAR_noaomasportlet_city" type="text" value="" /> </div>
+                                             <div class="control-group form-inline input-select-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_country"> Country / Region </label> <select class="aui-field-select address-part" id="_noaregistrationportlet_WAR_noaomasportlet_country"
+                                                name="_noaregistrationportlet_WAR_noaomasportlet_country"> </select> </div>
+                                             <div class="control-group form-inline input-select-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_region"> Region </label> <select class="aui-field-select address-part" id="_noaregistrationportlet_WAR_noaomasportlet_region"
+                                                name="_noaregistrationportlet_WAR_noaomasportlet_region"> </select> </div>
+                                             <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_regionOther"> Region </label> <input class="field address-part" id="_noaregistrationportlet_WAR_noaomasportlet_regionOther"
+                                                name="_noaregistrationportlet_WAR_noaomasportlet_regionOther" type="text" value="" /> </div>
+                                             <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_postalCode"> Postal Code <span class="label-required">*</span> </label> <input class="field address-part" id="_noaregistrationportlet_WAR_noaomasportlet_postalCode"
+                                                name="_noaregistrationportlet_WAR_noaomasportlet_postalCode" type="text" value="" /> </div>
+                                             <div class="control-group form-inline field-wrapper nin-form-single-option">
+                                                <span class="control-label"> Existing Agreement </span> 
+                                                <label class="checkbox-inline" for="_noaregistrationportlet_WAR_noaomasportlet_existingAgreementFlagCheckbox">
+                                                   <input id="_noaregistrationportlet_WAR_noaomasportlet_existingAgreementFlag" name="_noaregistrationportlet_WAR_noaomasportlet_existingAgreementFlag" type="hidden" value="false" /> <input  class="field"  id="_noaregistrationportlet_WAR_noaomasportlet_existingAgreementFlagCheckbox" name="_noaregistrationportlet_WAR_noaomasportlet_existingAgreementFlagCheckbox"  onClick="Liferay.Util.updateCheckboxValue(this); "  type="checkbox" value="false"   /> This organization has an existing publishing agreement with Nintendo 
+                                             </div>
+                                          </section>
+                                       </div>
+                                       <div class="nin-user-details nin-form" id="user-details"> <div class="nin-form-title"> <h5>User Information</h5> </div> <section class="nin-form-content"> <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_firstName"> First Name <span class="label-required">*</span> </label>                                                            <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_firstName" name="_noaregistrationportlet_WAR_noaomasportlet_firstName" type="text" value="" /> </div>
+                                       <div class="control-group form-inline input-text-wrapper">
+                                       <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_lastName"> Last Name <span class="label-required">*</span> </label> <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_lastName"
+                                          name="_noaregistrationportlet_WAR_noaomasportlet_lastName" type="text" value="" /> </div>
+                                       <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_jobTitle"> Job Title </label> <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_jobTitle" name="_noaregistrationportlet_WAR_noaomasportlet_jobTitle"
+                                          type="text" value="" /> </div>
+                                       <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_nickname"> Nickname <span class="taglib-icon-help"><img alt="" aria-labelledby="vnqb" onBlur="Liferay.Portal.ToolTip.hide();" onFocus="Liferay.Portal.ToolTip.show(this);" onMouseOver="Liferay.Portal.ToolTip.show(this);" src="../noa-theme/images/portlet/help.png" tabIndex="0" /><span class="hide-accessible tooltip-text" id="vnqb" >Enter a nickname for use in the Nintendo Developer Portal forums.</span></span> </label>                                                            <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_nickname" name="_noaregistrationportlet_WAR_noaomasportlet_nickname" type="text" value="" /> </div>
+                                       <div class="control-group form-inline input-text-wrapper">
+                                       <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_screenName"> Choose a Nintendo Developer ID <span class="label-required">*</span> <span class="taglib-icon-help"><img alt="" aria-labelledby="mfwn" onBlur="Liferay.Portal.ToolTip.hide();" onFocus="Liferay.Portal.ToolTip.show(this);" onMouseOver="Liferay.Portal.ToolTip.show(this);" src="../noa-theme/images/portlet/help.png" tabIndex="0" /><span class="hide-accessible tooltip-text" id="mfwn" >This is your Nintendo Developer ID. Choose an easy-to-remember name that is 5 to 32 characters long.</span></span> </label>                                                            <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_screenName" name="_noaregistrationportlet_WAR_noaomasportlet_screenName" type="text" value="" /> </div>
+                                       <div class="control-group form-inline input-text-wrapper">
+                                       <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_emailAddress"> Email Address <span class="label-required">*</span> <span class="taglib-icon-help"><img alt="" aria-labelledby="kxpt" onBlur="Liferay.Portal.ToolTip.hide();" onFocus="Liferay.Portal.ToolTip.show(this);" onMouseOver="Liferay.Portal.ToolTip.show(this);" src="../noa-theme/images/portlet/help.png" tabIndex="0" /><span class="hide-accessible tooltip-text" id="kxpt" >Enter a valid email address that is less than 75 characters.</span></span> </label>                                                            <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_emailAddress" name="_noaregistrationportlet_WAR_noaomasportlet_emailAddress" type="text" value="" /> </div>
+                                       <div class="control-group form-inline input-text-wrapper">
+                                       <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_confirmEmailAddress"> Confirm Email Address <span class="label-required">*</span> </label> <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_confirmEmailAddress"
+                                          name="_noaregistrationportlet_WAR_noaomasportlet_confirmEmailAddress" type="text" value="" /> </div>
+                                       <div class="control-group form-inline field-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_isAuthorizedWrapper"> Are you authorized to enter into legal agreements on behalf of your company? <span class="taglib-icon-help"><img alt="" aria-labelledby="pvln" onBlur="Liferay.Portal.ToolTip.hide();" onFocus="Liferay.Portal.ToolTip.show(this);" onMouseOver="Liferay.Portal.ToolTip.show(this);" src="../noa-theme/images/portlet/help.png" tabIndex="0" /><span class="hide-accessible tooltip-text" id="pvln" >If you are not authorized to enter into legal agreements with Nintendo on behalf of your Company, please enter a Company Officer or other authorized individual in the Legal Agreement User section.</span></span> </label>                                                            <label for="_noaregistrationportlet_WAR_noaomasportlet_gxtf"> <input checked class="field"  id="_noaregistrationportlet_WAR_noaomasportlet_gxtf" name="_noaregistrationportlet_WAR_noaomasportlet_isAuthorized"  onClick="_noaregistrationportlet_WAR_noaomasportlet_setIsAuthorized(true);"  type="radio" value="true"   /> Yes </label>                                                            <label for="_noaregistrationportlet_WAR_noaomasportlet_bvbc"> <input  class="field"  id="_noaregistrationportlet_WAR_noaomasportlet_bvbc" name="_noaregistrationportlet_WAR_noaomasportlet_isAuthorized"  onClick="_noaregistrationportlet_WAR_noaomasportlet_setIsAuthorized(false);"  type="radio" value="false"   /> No </label>                                                            </div>
+                                       <div class="control-group form-inline field-wrapper nin-form-single-option"> <span class="control-label"> You must be at least 18 or the legal age of majority in your country of residence in order to submit a developer application to Nintendo. <span class="label-required">*</span>                                                            </span> <label class="checkbox-inline" for="_noaregistrationportlet_WAR_noaomasportlet_isLegalAgeCheckbox"> <input id="_noaregistrationportlet_WAR_noaomasportlet_isLegalAge" name="_noaregistrationportlet_WAR_noaomasportlet_isLegalAge" type="hidden" value="false" /> <input  class="field"  id="_noaregistrationportlet_WAR_noaomasportlet_isLegalAgeCheckbox" name="_noaregistrationportlet_WAR_noaomasportlet_isLegalAgeCheckbox"  onClick="Liferay.Util.updateCheckboxValue(this); "  type="checkbox" value="false"   /> By ticking this box you confirm that this is the case. <span class="label-required">*</span> </div> </section> </div> <div class="nin-form nin-legal-agreement-user" id="legal-agreement-user"> <div class="nin-form-title"> <h5>Agreement Approver Information</h5> </div> <section class="nin-form-content"> <p><h6>Please enter a company officer or other individual who is authorized to enter into legal agreements on behalf of your company</h6></p><br/> <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_firstNameAuth"> Agreement Approver's First Name </label>                                                            <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_firstNameAuth" name="_noaregistrationportlet_WAR_noaomasportlet_firstNameAuth" type="text" value="" /> </div>
+                                       <div class="control-group form-inline input-text-wrapper">
+                                       <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_lastNameAuth"> Agreement Approver's Last Name </label> <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_lastNameAuth"
+                                          name="_noaregistrationportlet_WAR_noaomasportlet_lastNameAuth" type="text" value="" /> </div>
+                                       <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_jobTitleAuth"> Agreement Approver's Job Title </label> <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_jobTitleAuth"
+                                          name="_noaregistrationportlet_WAR_noaomasportlet_jobTitleAuth" type="text" value="" /> </div>
+                                       <div class="control-group form-inline input-text-wrapper"> <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_nicknameAuth"> Agreement Approver's Forum Screen Name <span class="taglib-icon-help"><img alt="" aria-labelledby="wchi" onBlur="Liferay.Portal.ToolTip.hide();" onFocus="Liferay.Portal.ToolTip.show(this);" onMouseOver="Liferay.Portal.ToolTip.show(this);" src="../noa-theme/images/portlet/help.png" tabIndex="0" /><span class="hide-accessible tooltip-text" id="wchi" >Enter a nickname for use in the Nintendo Developer Portal forums.</span></span> </label>                                                            <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_nicknameAuth" name="_noaregistrationportlet_WAR_noaomasportlet_nicknameAuth" type="text" value="" /> </div>
+                                       <div class="control-group form-inline input-text-wrapper">
+                                       <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_screenNameAuth"> Agreement Approver's Preferred Nintendo Developer ID <span class="taglib-icon-help"><img alt="" aria-labelledby="ebqk" onBlur="Liferay.Portal.ToolTip.hide();" onFocus="Liferay.Portal.ToolTip.show(this);" onMouseOver="Liferay.Portal.ToolTip.show(this);" src="../noa-theme/images/portlet/help.png" tabIndex="0" /><span class="hide-accessible tooltip-text" id="ebqk" >This is the Agreement Approver's Nintendo Developer ID. Choose an easy-to-remember name that is 5 to 32 characters long.</span></span> </label>                                                            <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_screenNameAuth" name="_noaregistrationportlet_WAR_noaomasportlet_screenNameAuth" type="text" value="" /> </div>
+                                       <div class="control-group form-inline input-text-wrapper">
+                                       <label class="control-label" for="_noaregistrationportlet_WAR_noaomasportlet_emailAddressAuth"> Agreement Approver's Email Address <span class="taglib-icon-help"><img alt="" aria-labelledby="ptng" onBlur="Liferay.Portal.ToolTip.hide();" onFocus="Liferay.Portal.ToolTip.show(this);" onMouseOver="Liferay.Portal.ToolTip.show(this);" src="../noa-theme/images/portlet/help.png" tabIndex="0" /><span class="hide-accessible tooltip-text" id="ptng" >Enter a valid email address that is less than 75 characters.</span></span> </label>                                                            <input class="field" id="_noaregistrationportlet_WAR_noaomasportlet_emailAddressAuth" name="_noaregistrationportlet_WAR_noaomasportlet_emailAddressAuth" type="text" value="" /> </div>
+                                       </section>
+                                       </div>
+                                       <div class="final-step nin-form">
+                                          <div class="nin-form-content">
+                                             <div class="country-japan">
+                                                <div class="control-group field-wrapper">
+                                                   <p>Nintendo may share your information with Nintendo affiliates, including the companies listed in <a href="https://www.nintendo.co.jp/legal/affiliate.html" target="_new">this website</a> (https://www.nintendo.co.jp/legal/affiliate.html),
+                                                      based on the Nintendo Privacy Notice. <br/>Also, other users may be able to see your nickname in the Nintendo Developer Portal forums. <br/>In these cases, your information will be handled
+                                                      in compliance with the Nintendo Privacy Notice.
+                                                   </p>
+                                                </div>
+                                                <div class="control-group field-wrapper"> <label class="control-label"></label> <label class="checkbox-inline" for="_noaregistrationportlet_WAR_noaomasportlet_isAgreeCheckbox"> <input id="_noaregistrationportlet_WAR_noaomasportlet_isAgree" name="_noaregistrationportlet_WAR_noaomasportlet_isAgree" type="hidden" value="false" /> <input  class="field"  id="_noaregistrationportlet_WAR_noaomasportlet_isAgreeCheckbox" name="_noaregistrationportlet_WAR_noaomasportlet_isAgreeCheckbox"  onClick="Liferay.Util.updateCheckboxValue(this); "  type="checkbox" value="false"   /> Confirmed <span class="label-required">*</span> </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div>
+                                          <div class="button-holder"> <button class="btn nin-btn nin-btn-secondary back-to-last-step" id="_noaregistrationportlet_WAR_noaomasportlet_final-step-button" onClick="_noaregistrationportlet_WAR_noaomasportlet_goToLastStep(this);" type='button' > Edit </button> <button class="btn nin-btn nin-btn-primary review" id="_noaregistrationportlet_WAR_noaomasportlet_review-button" onClick="_noaregistrationportlet_WAR_noaomasportlet_validateSectionAndReview(this);" type='button' > Review Application </button> <button class="btn nin-btn nin-btn-primary margin-left save-submit nin-save-form" id="_noaregistrationportlet_WAR_noaomasportlet_submit-button" onClick="_noaregistrationportlet_WAR_noaomasportlet_submitRegistration(this);" type='button' > Submit Application </button> </div>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="portlet-boundary portlet-boundary_1_WAR_kaleodesignerportlet_ portlet-static portlet-static-end portlet-borderless kaleo-designer-portlet " id="p_p_id_1_WAR_kaleodesignerportlet_" > </div>
+               <form action="#" id="hrefFm" method="post" name="hrefFm"> <span></span> </form>
+            </div>
+         </div>
+      </div>
+      <!-- FOOTER --> 
+      <div class="nin-mega-footer">
+         <div id="footer-wrapper" class="container-fluid">
+            <div id="footer" role="contentinfo" class="row-fluid">
+               <ul>
+                  <li><a href="../web/development/contact.html">Contact</a></li>
+                  <li><a href="../web/development/privacy.html">Privacy Notice</a></li>
+                  <li class="copyright">&copy; 2021 Nintendo</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <span id="required-asterisk" class="hidden">
+         <div class="req-note-asterisk req-note-asterisk-handle">An asterisk <span class='label-required'>*</span> denotes required field</div>
+      </span>
+      </div>
+      <script type="text/javascript">$(document).ready(function(){var a=getCookie("trackEssentialCookie");if(a!="enabled"&&a!="disabled"&&true){window.onscroll=function(){window.scrollTo(0,0)};document.body.style.overflow="hidden";$(".cookie-banner").show()}});function closeCookieBanner(){document.body.style.overflow="";window.onscroll=function(){};$(".cookie-overlay").hide();setCookie("trackEssentialCookie","enabled",365)}function rejectAndCloseCookieBanner(){document.body.style.overflow="";window.onscroll=function(){};$(".cookie-overlay").hide();setCookie("trackEssentialCookie","enabled",365);setCookie("tGoogleAnalytics","disabled",365)}function getCookie(d){var b=d+"=";var a=document.cookie.split(";");for(var e=0;e<a.length;e++){var f=a[e];while(f.charAt(0)==" "){f=f.substring(1)}if(f.indexOf(b)==0){return f.substring(b.length,f.length)}}return""}function setCookie(b,f,c){var e=new Date();e.setTime(e.getTime()+(c*24*60*60*1000));var a="expires="+e.toUTCString();document.cookie=b+"="+f+";"+a+";path=/"};</script> 
+   </body>
+   <script type="text/javascript">Liferay.Util.addInputFocus();
+   </script>
+   <script type="text/javascript">Liferay.Portlet.onLoad( {
+       canEditTitle: false, columnPos:0, isStatic:"end", namespacedId:"p_p_id_82_", portletId:"82", refreshURL:"\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d691506\x26p_p_id\x3d82\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fregister\x252Fcreate"
+   }
+   
+   );
+   $(document).ready(function() {
+       $("#main-content .portlet-layout .nin-body-with-vertical-nav .nin-page-title .page-title").text("Create Account")
+   }
+   
+   );
+   Liferay.Portlet.onLoad( {
+       canEditTitle: false, columnPos:0, isStatic:"end", namespacedId:"p_p_id_noabreadcrumbportlet_WAR_noanavigationportlet_", portletId:"noabreadcrumbportlet_WAR_noanavigationportlet", refreshURL:"\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d691506\x26p_p_id\x3dnoabreadcrumbportlet_WAR_noanavigationportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fregister\x252Fcreate"
+   }
+   
+   );
+   Liferay.provide(Liferay.Util, "openKaleoDesignerPortlet", function(c) {
+       var b=AUI();
+       var e=Liferay.PortletURL.createURL("create.html");
+       e.setParameter("mvcPath", "/");
+       e.setParameter("availableFields", c.availableFields);
+       e.setParameter("availablePropertyModels", c.availablePropertyModels);
+       e.setParameter("ddmStructureId", c.ddmStructureId);
+       e.setParameter("draftVersion", c.draftVersion);
+       e.setParameter("kaleoProcessId", c.kaleoProcessId);
+       e.setParameter("name", c.name);
+       e.setParameter("openerWindowName", c.openerWindowName);
+       e.setParameter("portletResourceNamespace", c.portletResourceNamespace);
+       e.setParameter("propertiesSaveCallback", c.propertiesSaveCallback);
+       e.setParameter("refreshOpenerOnClose", c.refreshOpenerOnClose);
+       e.setParameter("saveCallback", c.saveCallback);
+       e.setParameter("version", c.version);
+       e.setWindowState("pop_up");
+       c.uri=e.toString();
+       var d=c.dialog;
+       if( !d) {
+           var f=b.one(Liferay.Util.getOpener()).get("region");
+           d= {
+               destroyOnHide: true
+           }
+           ;
+           c.dialog=d
+       }
+       if( !("align" in d)) {
+           d.align=Liferay.Util.Window.ALIGN_CENTER
+       }
+       var a=c.dialogIframe;
+       if( !a) {
+           a= {
+               closeOnEscape: false
+           }
+           ;
+           c.dialogIframe=a
+       }
+       Liferay.Util.openWindow(c)
+   }
+   
+   ,
+   ["liferay-portlet-url"]);
+   Liferay.Portlet.onLoad( {
+       canEditTitle: false, columnPos:0, isStatic:"end", namespacedId:"p_p_id_1_WAR_kaleodesignerportlet_", portletId:"1_WAR_kaleodesignerportlet", refreshURL:"\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d691506\x26p_p_id\x3d1_WAR_kaleodesignerportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fregister\x252Fcreate"
+   }
+   
+   );
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_companyName");
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji");
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_dbaName");
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji");
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_firstName");
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_lastName");
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_emailAddress");
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_confirmEmailAddress");
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_firstNameAuth");
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_lastNameAuth");
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_jobTitleAuth");
+   Liferay.Util.focusFormField("#_noaregistrationportlet_WAR_noaomasportlet_emailAddressAuth");
+   if(false) {
+       var captchField=$(".taglib-captcha").find(".field, [class|='aui-field'] ");
+       captchField.focus()
+   }
+   
+   else {
+       $("html, body").animate( {
+           scrollTop: "0px"
+       }
+       )
+   }
+   
+   if(false) {
+       $("#_noaregistrationportlet_WAR_noaomasportlet_screenName").prop("readonly",
+       true);
+       $("#_noaregistrationportlet_WAR_noaomasportlet_emailAddress").prop("readonly",
+       true)
+   }
+   
+   function captchaCompleted(a) {
+       $(".captchaResult").val(a)
+   }
+   
+   function captchaExpired(a) {
+       $(".captchaResult").val("")
+   }
+   
+   _noaregistrationportlet_WAR_noaomasportlet_calculateNameLength("");
+   _noaregistrationportlet_WAR_noaomasportlet_setIsIndividual($("#_noaregistrationportlet_WAR_noaomasportlet_isIndividual").val());
+   var isAuthorizedUser=($("input:radio[name='_noaregistrationportlet_WAR_noaomasportlet_isAuthorized']:checked").val()=="true");
+   _noaregistrationportlet_WAR_noaomasportlet_setIsAuthorized(isAuthorizedUser);
+   function _noaregistrationportlet_WAR_noaomasportlet_setIsIndividual(a) {
+       var c=(a===true||a==="true");
+       $("#_noaregistrationportlet_WAR_noaomasportlet_isIndividual").val(c);
+       var b=$('input:radio[name="_noaregistrationportlet_WAR_noaomasportlet_isAuthorized"][value="false"]').parent();
+       if(b.hasClass("selected")) {
+           b.removeClass("selected");
+           $('input:radio[name="_noaregistrationportlet_WAR_noaomasportlet_isAuthorized"][value="true"]').parent().addClass("selected");
+           $('input:radio[name="_noaregistrationportlet_WAR_noaomasportlet_isAuthorized"]')[0].checked=true
+       }
+       $('[name="_noaregistrationportlet_WAR_noaomasportlet_isAuthorized"]').attr("disabled",
+       c);
+       $(".registration-number").toggle( !c);
+       NOA.Custom.displayFieldRequiredLabel("#_noaregistrationportlet_WAR_noaomasportlet_dbaName",
+       c);
+       if(c) {
+           _noaregistrationportlet_WAR_noaomasportlet_setIsAuthorized(true);
+           $('input:radio[name="_noaregistrationportlet_WAR_noaomasportlet_isAuthorized"]')[0].checked=true
+       }
+   }
+   
+   function _noaregistrationportlet_WAR_noaomasportlet_resetLegalAgreementFields() {
+       var a=$(".nin-registration-portlet .nin-legal-agreement-user");
+       a.find(".form-validator-stack").remove();
+       a.find(".control-group").removeClass("success error")
+   }
+   
+   function _noaregistrationportlet_WAR_noaomasportlet_setIsAuthorized(a) {
+       $("#_noaregistrationportlet_WAR_noaomasportlet_isAuthorizedUser").val(a);
+       $(".nin-legal-agreement-user").toggle( !a);
+       NOA.Custom.displayFieldRequiredLabel("#_noaregistrationportlet_WAR_noaomasportlet_firstNameAuth",
+        !a);
+       NOA.Custom.displayFieldRequiredLabel("#_noaregistrationportlet_WAR_noaomasportlet_lastNameAuth",
+        !a);
+       NOA.Custom.displayFieldRequiredLabel("#_noaregistrationportlet_WAR_noaomasportlet_emailAddressAuth",
+        !a);
+       NOA.Custom.displayFieldRequiredLabel("#_noaregistrationportlet_WAR_noaomasportlet_screenNameAuth",
+        !a);
+       if(a) {
+           _noaregistrationportlet_WAR_noaomasportlet_resetLegalAgreementFields()
+       }
+   }
+   
+   function _noaregistrationportlet_WAR_noaomasportlet_validateSectionAndReview(a) {
+       if(_noaregistrationportlet_WAR_noaomasportlet_validateSection(a)) {
+           $(".nin-registration-portlet .field").attr("readonly",
+           "readonly");
+           $(".nin-registration-portlet .aui-field-select").prop("disabled",
+           true);
+           $(".nin-registration-portlet input[type=checkbox]").prop("disabled",
+           true);
+           $(".nin-registration-portlet input[type=radio]").prop("disabled",
+           true);
+           var b=($(".nin-registration-portlet input:radio[name='_noaregistrationportlet_WAR_noaomasportlet_isAuthorized']:checked").val()=="true");
+           $(".nin-registration-portlet .review").hide();
+           _noaregistrationportlet_WAR_noaomasportlet_checkPreviewButtonEnable();
+           $(".nin-registration-portlet .back-to-last-step").show();
+           $(".nin-registration-portlet .field").addClass("input-disabled");
+           $(".nin-registration-portlet .aui-field-select").addClass("input-disabled");
+           $(".nin-registration-portlet .nin-confirmation-title").show();
+           $(".nin-registration-portlet .nin-top-button-holder").show();
+           $(".nin-registration-portlet .save-submit").show();
+           $("html, body").animate( {
+               scrollTop: "0px"
+           }
+           );
+           $(".nin-registration-portlet .nin-registration-title").hide();
+           $(".alert-error").hide();
+           return true
+       }
+       return false
+   }
+   
+   function _noaregistrationportlet_WAR_noaomasportlet_submitRegistration(b) {
+       var d=true;
+       if(true) {
+           var a=grecaptcha.getResponse();
+           $(".g-recaptcha-error").addClass("hidden");
+           if(a.length==0) {
+               d=false;
+               $(".g-recaptcha-error").removeClass("hidden");
+               document.querySelector(".g-recaptcha-error").scrollIntoView( {
+                   behavior: "smooth"
+               }
+               )
+           }
+       }
+       if(d) {
+           $(".nin-registration-portlet .aui-field-select").prop("disabled",
+           false);
+           $(".nin-registration-portlet input[type=checkbox]").prop("disabled",
+           false);
+           $(".nin-registration-portlet input[type=radio]").prop("disabled",
+           false);
+           var c=$("#_noaregistrationportlet_WAR_noaomasportlet_noaWizardFm");
+           NOA.Custom.updateSavedData(c);
+           c.submit()
+       }
+   }
+   
+   function _noaregistrationportlet_WAR_noaomasportlet_goToLastStep(a) {
+       $(".g-recaptcha-error").addClass("hidden");
+       $(".nin-registration-portlet .review").show();
+       _noaregistrationportlet_WAR_noaomasportlet_checkPreviewButtonEnable();
+       $(".nin-registration-portlet .save-submit").hide();
+       $(".nin-registration-portlet .back-to-last-step").hide();
+       $(".nin-registration-portlet .field").removeAttr("readonly");
+       $(".nin-registration-portlet .aui-field-select").prop("disabled",
+       false);
+       $(".nin-registration-portlet .field").removeClass("input-disabled");
+       $(".nin-registration-portlet .aui-field-select").removeClass("input-disabled");
+       $(".nin-registration-portlet input[type=checkbox]").prop("disabled",
+       false);
+       $(".nin-registration-portlet input[type=radio]").prop("disabled",
+       false);
+       $(".nin-registration-portlet .nin-confirmation-title").hide();
+       $(".nin-registration-portlet .nin-top-button-holder").hide();
+       $(".nin-registration-portlet .nin-registration-title").show()
+   }
+   
+   function _noaregistrationportlet_WAR_noaomasportlet_validateSection(c) {
+       var d=$(c).parents(".lfr-dynamic-form");
+       var a=d.find(".field, [class|='aui-field'] ");
+       a.each(function() {
+           this.focus()
+       }
+       );
+       a[0].focus();
+       var e=d.find(".form-inline.error");
+       var b=d.find(".error-field");
+       if(b.length>0) {
+           b[0].focus()
+       }
+       return(e.length<=0)
+   }
+   
+   function _noaregistrationportlet_WAR_noaomasportlet_toggleOtherField(b) {
+       var a=$(b).is(":checked");
+       $(".platformOtherValueField").toggle(a)
+   }
+   
+   function _noaregistrationportlet_WAR_noaomasportlet_calculateNameLength(d) {
+       var b=$("#_noaregistrationportlet_WAR_noaomasportlet_firstName"+d).val();
+       var a=$("#_noaregistrationportlet_WAR_noaomasportlet_lastName"+d).val();
+       var c=(b+" "+a).length;
+       return c<=32
+   }
+   
+   function _noaregistrationportlet_WAR_noaomasportlet_requiredForUnauthorizedUser(b) {
+       var a=($("input:radio[name='_noaregistrationportlet_WAR_noaomasportlet_isAuthorized']:checked").val()=="true");
+       if( !a&&b=="") {
+           return false
+       }
+       return true
+   }
+   
+   function _noaregistrationportlet_WAR_noaomasportlet_requiredForIndividual(c,
+   a) {
+       var b=$("#_noaregistrationportlet_WAR_noaomasportlet_isIndividual").val()=="true";
+       if(a&&b&&c=="") {
+           return false
+       }
+       if( !a&& !b&&c=="") {
+           return false
+       }
+       return true
+   }
+   
+   function _noaregistrationportlet_WAR_noaomasportlet_checkPreviewButtonEnable() {
+       if($("#_noaregistrationportlet_WAR_noaomasportlet_country").val()==9) {
+           $(".country-japan").show()
+       }
+       else {
+           $(".country-japan").hide()
+       }
+       if($(".nin-registration-portlet .review").is(":visible")) {
+           if($("#_noaregistrationportlet_WAR_noaomasportlet_country").val()==9&& !$("#_noaregistrationportlet_WAR_noaomasportlet_isAgreeCheckbox").prop("checked")) {
+               $(".nin-registration-portlet .review").addClass("disabled")
+           }
+           else {
+               $(".nin-registration-portlet .review").removeClass("disabled")
+           }
+       }
+   }
+   
+   $(document).ready(function() {
+       $("#_noaregistrationportlet_WAR_noaomasportlet_region").parents(".control-group").hide();
+       var a=($(".nin-registration-portlet input:radio[name='_noaregistrationportlet_WAR_noaomasportlet_isAuthorized']:checked").val()=="true");
+       if(false) {
+           $("input:radio[name=_noaregistrationportlet_WAR_noaomasportlet_regType]")[1].checked=true
+       }
+       else {
+           $("input:radio[name=_noaregistrationportlet_WAR_noaomasportlet_regType]")[0].checked=true
+       }
+       $(".nin-legal-agreement-user").toggle( !a);
+       $(".back-to-last-step").hide();
+       $(".save-submit").hide();
+       $(".nin-confirmation-title").hide();
+       $(".nin-registration-portlet .nin-top-button-holder").hide();
+       $(".conditionally-required").parent().find("label").append("<span class='label-required'>*</span>");
+       var b=$("#_noaregistrationportlet_WAR_noaomasportlet_companyName");
+       var c=$("#_noaregistrationportlet_WAR_noaomasportlet_dbaName");
+       $("#_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji").parent().hide();
+       $("#_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji").parent().hide();
+       $(".nin-registration-portlet .address-part").change(function() {
+           $(".nin-registration-portlet .force-save-address").val("false")
+       }
+       );
+       b.blur(function() {
+           var d=b.val();
+           if(d !=""&&NOA.Custom.hasKanji(d)) {
+               $("#_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji").parent().show()
+           }
+           else {
+               $("#_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji").parent().hide();
+               $("#_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji").val("");
+               var e=$("#_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji");
+               e.parent(".control-group").removeClass("success error");
+               e.parent(".control-group").children(".form-validator-stack").remove()
+           }
+       }
+       );
+       c.blur(function() {
+           var e=c.val();
+           if(e !=""&&NOA.Custom.hasKanji(e)) {
+               $("#_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji").parent().show()
+           }
+           else {
+               $("#_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji").parent().hide();
+               $("#_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji").val("");
+               var d=$("#_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji");
+               d.parent(".control-group").removeClass("success error");
+               d.parent(".control-group").children(".form-validator-stack").remove()
+           }
+       }
+       );
+       _noaregistrationportlet_WAR_noaomasportlet_checkPreviewButtonEnable();
+       $("#_noaregistrationportlet_WAR_noaomasportlet_isAgreeCheckbox").click(function() {
+           _noaregistrationportlet_WAR_noaomasportlet_checkPreviewButtonEnable()
+       }
+       );
+       $("#_noaregistrationportlet_WAR_noaomasportlet_country").click(function() {
+           _noaregistrationportlet_WAR_noaomasportlet_checkPreviewButtonEnable()
+       }
+       )
+   }
+   
+   );
+   Liferay.Portlet.onLoad( {
+       canEditTitle: false, columnPos:0, isStatic:"end", namespacedId:"p_p_id_noaregistrationportlet_WAR_noaomasportlet_", portletId:"noaregistrationportlet_WAR_noaomasportlet", refreshURL:"\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d691506\x26p_p_id\x3dnoaregistrationportlet_WAR_noaomasportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fregister\x252Fcreate"
+   }
+   
+   );
+   AUI().use(" aui-base",
+   " aui-node",
+   "aui-base",
+   "aui-char-counter",
+   "liferay-dynamic-select",
+   "liferay-form",
+   "liferay-form-wizard",
+   "liferay-menu",
+   "liferay-notice",
+   "liferay-poller",
+   "liferay-session",
+   function(a) {
+       (function() {
+           Liferay.Util.addInputType();
+           Liferay.Portlet.ready(function(b, c) {
+               Liferay.Util.addInputType(c)
+           }
+           );
+           if(a.UA.mobile) {
+               Liferay.Util.addInputCancel()
+           }
+       }
+       )();
+       (function() {
+           new Liferay.Menu();
+           var b=Liferay.Data.notices;
+           for(var c=1;
+           c<b.length;
+           c++) {
+               new Liferay.Notice(b[c])
+           }
+       }
+       )();
+       (function() {
+           Liferay.Session=new Liferay.SessionBase( {
+               autoExtend: true, sessionLength:240, redirectOnExpire:true, redirectUrl:"../index.html", warningLength:3
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_companyName", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_dbaName", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_addressLine1", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_addressLine2", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_city", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_regionOther", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_firstName", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_lastName", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_jobTitle", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_nickname", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_screenName", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_emailAddress", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_confirmEmailAddress", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_firstNameAuth", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_lastNameAuth", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_jobTitleAuth", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_nicknameAuth", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_screenNameAuth", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           new a.CharCounter( {
+               input: "#_noaregistrationportlet_WAR_noaomasportlet_emailAddressAuth", maxLength:75,
+           }
+           )
+       }
+       )();
+       (function() {
+           Liferay.Form.register( {
+               id:"_noaregistrationportlet_WAR_noaomasportlet_noaWizardFm", fieldRules:[ {
+                   body:function(c, b, d) {
+                       return _noaregistrationportlet_WAR_noaomasportlet_calculateNameLength("")
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0054\u0068\u0065\u0020\u0063\u006f\u006d\u0062\u0069\u006e\u0061\u0074\u0069\u006f\u006e\u0020\u006f\u0066\u0020\u0066\u0069\u0072\u0073\u0074\u0020\u006e\u0061\u006d\u0065\u0020\u0061\u006e\u0064\u0020\u006c\u0061\u0073\u0074\u0020\u006e\u0061\u006d\u0065\u0020\u006d\u0075\u0073\u0074\u0020\u0062\u0065\u0020\u0033\u0032\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073\u0020\u006f\u0072\u0020\u006c\u0065\u0073\u0073\u0020\u0069\u006e\u0063\u006c\u0075\u0064\u0069\u006e\u0067\u0020\u0073\u0070\u0061\u0063\u0065\u0073\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_lastName", validatorName:"lastName_custom"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_lastName", validatorName:"required"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_city", validatorName:"required"
+               }
+               , {
+                   body: 75, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_city", validatorName:"maxLength"
+               }
+               , {
+                   body:function(c, b, d) {
+                       if(c.trim() !=""&&c.toUpperCase()===$("#_noaregistrationportlet_WAR_noaomasportlet_screenName").val().toUpperCase()) {
+                           return false
+                       }
+                       return true
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u004e\u0069\u006e\u0074\u0065\u006e\u0064\u006f\u0020\u0044\u0065\u0076\u0065\u006c\u006f\u0070\u0065\u0072\u0020\u0049\u0044\u0020\u0061\u006e\u0064\u0020\u0063\u006f\u006d\u0070\u0061\u006e\u0079\u0020\u006e\u0061\u006d\u0065\u0020\u006d\u0075\u0073\u0074\u0020\u006e\u006f\u0074\u0020\u0062\u0065\u0020\u0074\u0068\u0065\u0020\u0073\u0061\u006d\u0065\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_companyName", validatorName:"companyName_custom"
+               }
+               , {
+                   body:function(c, b, d) {
+                       if(NOA.Custom.hasFullWidthKatakanaExceptHalfWidthKE(c.trim())) {
+                           return false
+                       }
+                       return true
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0049\u006e\u0076\u0061\u006c\u0069\u0064\u0020\u004f\u0072\u0067\u0061\u006e\u0069\u007a\u0061\u0074\u0069\u006f\u006e\u0020\u004e\u0061\u006d\u0065\u002e\u0020\u0050\u006c\u0065\u0061\u0073\u0065\u0020\u0064\u006f\u0020\u006e\u006f\u0074\u0020\u0065\u006e\u0074\u0065\u0072\u0020\u0066\u0075\u006c\u006c\u0077\u0069\u0064\u0074\u0068\u0020\u004b\u0061\u0074\u0061\u006b\u0061\u006e\u0061\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_companyName", validatorName:"companyName_custom_1"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_companyName", validatorName:"required"
+               }
+               , {
+                   body: 64, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_companyName", validatorName:"maxLength"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_postalCode", validatorName:"required"
+               }
+               , {
+                   body: 75, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_postalCode", validatorName:"maxLength"
+               }
+               , {
+                   body: 100, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_jobTitle", validatorName:"maxLength"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_isLegalAge", validatorName:"required"
+               }
+               , {
+                   body: NOA.Custom.validateNDID, custom:true, customValidatorRequired:true, errorMessage:"\u0050\u006c\u0065\u0061\u0073\u0065\u0020\u0065\u006e\u0074\u0065\u0072\u0020\u0061\u0020\u004e\u0069\u006e\u0074\u0065\u006e\u0064\u006f\u0020\u0044\u0065\u0076\u0065\u006c\u006f\u0070\u0065\u0072\u0020\u0049\u0044\u0020\u0074\u0068\u0061\u0074\u0020\u0069\u0073\u0020\u0062\u0065\u0074\u0077\u0065\u0065\u006e\u0020\u0035\u0020\u0061\u006e\u0064\u0020\u0033\u0032\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073\u0020\u006c\u006f\u006e\u0067\u002e\u0020\u004f\u006e\u006c\u0079\u0020\u0073\u0069\u006e\u0067\u006c\u0065\u002d\u0062\u0079\u0074\u0065\u0020\u0061\u006c\u0070\u0068\u0061\u006e\u0075\u006d\u0065\u0072\u0069\u0063\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073\u002c\u0020\u005f\u0020\u0028\u0075\u006e\u0064\u0065\u0072\u0073\u0063\u006f\u0072\u0065\u0029\u0020\u0061\u006e\u0064\u0020\u002e\u0020\u0028\u0070\u0065\u0072\u0069\u006f\u0064\u0029\u0020\u0063\u0061\u006e\u0020\u0062\u0065\u0020\u0075\u0073\u0065\u0064\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_screenName", validatorName:"screenName_custom_1"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_screenName", validatorName:"required"
+               }
+               , {
+                   body:function(c, b, d) {
+                       if(c.trim() !=""&&c.toUpperCase()===$("#_noaregistrationportlet_WAR_noaomasportlet_companyName").val().toUpperCase()) {
+                           return false
+                       }
+                       return true
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u004e\u0069\u006e\u0074\u0065\u006e\u0064\u006f\u0020\u0044\u0065\u0076\u0065\u006c\u006f\u0070\u0065\u0072\u0020\u0049\u0044\u0020\u0061\u006e\u0064\u0020\u0063\u006f\u006d\u0070\u0061\u006e\u0079\u0020\u006e\u0061\u006d\u0065\u0020\u006d\u0075\u0073\u0074\u0020\u006e\u006f\u0074\u0020\u0062\u0065\u0020\u0074\u0068\u0065\u0020\u0073\u0061\u006d\u0065\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_screenName", validatorName:"screenName_custom"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_emailAddress", validatorName:"required"
+               }
+               , {
+                   body: 75, custom:false, customValidatorRequired:true, errorMessage:"\u0054\u0068\u0065\u0020\u0065\u006d\u0061\u0069\u006c\u0020\u0061\u0064\u0064\u0072\u0065\u0073\u0073\u0020\u006d\u0075\u0073\u0074\u0020\u0062\u0065\u0020\u006c\u0065\u0073\u0073\u0020\u0074\u0068\u0061\u006e\u0020\u0037\u0035\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_emailAddress", validatorName:"maxLength"
+               }
+               , {
+                   body: NOA.Custom.validateEmail, custom:true, customValidatorRequired:true, errorMessage:"\u0050\u006c\u0065\u0061\u0073\u0065\u0020\u0065\u006e\u0074\u0065\u0072\u0020\u0061\u0020\u0076\u0061\u006c\u0069\u0064\u0020\u0065\u006d\u0061\u0069\u006c\u0020\u0061\u0064\u0064\u0072\u0065\u0073\u0073\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_emailAddress", validatorName:"emailAddress_custom"
+               }
+               , {
+                   body: 100, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_jobTitleAuth", validatorName:"maxLength"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_isAgree", validatorName:"required"
+               }
+               , {
+                   body:function(c, b, d) {
+                       return _noaregistrationportlet_WAR_noaomasportlet_calculateNameLength("Auth")
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0054\u0068\u0065\u0020\u0063\u006f\u006d\u0062\u0069\u006e\u0061\u0074\u0069\u006f\u006e\u0020\u006f\u0066\u0020\u0066\u0069\u0072\u0073\u0074\u0020\u006e\u0061\u006d\u0065\u0020\u0061\u006e\u0064\u0020\u006c\u0061\u0073\u0074\u0020\u006e\u0061\u006d\u0065\u0020\u006d\u0075\u0073\u0074\u0020\u0062\u0065\u0020\u0033\u0032\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073\u0020\u006f\u0072\u0020\u006c\u0065\u0073\u0073\u0020\u0069\u006e\u0063\u006c\u0075\u0064\u0069\u006e\u0067\u0020\u0073\u0070\u0061\u0063\u0065\u0073\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_firstNameAuth", validatorName:"firstNameAuth_custom"
+               }
+               , {
+                   body:function(c, b, d) {
+                       return _noaregistrationportlet_WAR_noaomasportlet_requiredForUnauthorizedUser(c)
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_firstNameAuth", validatorName:"firstNameAuth_custom_1"
+               }
+               , {
+                   body:function(c, b, d) {
+                       if(c.trim() !=""&&c.toUpperCase()===$("#_noaregistrationportlet_WAR_noaomasportlet_screenName").val().toUpperCase()) {
+                           return false
+                       }
+                       return true
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0041\u0067\u0072\u0065\u0065\u006d\u0065\u006e\u0074\u0020\u0041\u0070\u0070\u0072\u006f\u0076\u0065\u0072\u0027\u0073\u0020\u004e\u0069\u006e\u0074\u0065\u006e\u0064\u006f\u0020\u0044\u0065\u0076\u0065\u006c\u006f\u0070\u0065\u0072\u0020\u0049\u0044\u0020\u006d\u0075\u0073\u0074\u0020\u0062\u0065\u0020\u0064\u0069\u0066\u0066\u0065\u0072\u0065\u006e\u0074\u0020\u0066\u0072\u006f\u006d\u0020\u0074\u0068\u0065\u0020\u0043\u006f\u006d\u0070\u0061\u006e\u0079\u0020\u0041\u0064\u006d\u0069\u006e\u0027\u0073\u0020\u004e\u0069\u006e\u0074\u0065\u006e\u0064\u006f\u0020\u0044\u0065\u0076\u0065\u006c\u006f\u0070\u0065\u0072\u0020\u0049\u0044\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_screenNameAuth", validatorName:"screenNameAuth_custom_2"
+               }
+               , {
+                   body: NOA.Custom.validateNDID, custom:true, customValidatorRequired:true, errorMessage:"\u0050\u006c\u0065\u0061\u0073\u0065\u0020\u0065\u006e\u0074\u0065\u0072\u0020\u0061\u0020\u004e\u0069\u006e\u0074\u0065\u006e\u0064\u006f\u0020\u0044\u0065\u0076\u0065\u006c\u006f\u0070\u0065\u0072\u0020\u0049\u0044\u0020\u0074\u0068\u0061\u0074\u0020\u0069\u0073\u0020\u0062\u0065\u0074\u0077\u0065\u0065\u006e\u0020\u0035\u0020\u0061\u006e\u0064\u0020\u0033\u0032\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073\u0020\u006c\u006f\u006e\u0067\u002e\u0020\u004f\u006e\u006c\u0079\u0020\u0073\u0069\u006e\u0067\u006c\u0065\u002d\u0062\u0079\u0074\u0065\u0020\u0061\u006c\u0070\u0068\u0061\u006e\u0075\u006d\u0065\u0072\u0069\u0063\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073\u002c\u0020\u005f\u0020\u0028\u0075\u006e\u0064\u0065\u0072\u0073\u0063\u006f\u0072\u0065\u0029\u0020\u0061\u006e\u0064\u0020\u002e\u0020\u0028\u0070\u0065\u0072\u0069\u006f\u0064\u0029\u0020\u0063\u0061\u006e\u0020\u0062\u0065\u0020\u0075\u0073\u0065\u0064\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_screenNameAuth", validatorName:"screenNameAuth_custom"
+               }
+               , {
+                   body:function(c, b, d) {
+                       return _noaregistrationportlet_WAR_noaomasportlet_requiredForUnauthorizedUser(c)
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_screenNameAuth", validatorName:"screenNameAuth_custom_1"
+               }
+               , {
+                   body: 100, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_nickname", validatorName:"maxLength"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_addressLine1", validatorName:"required"
+               }
+               , {
+                   body: 75, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_addressLine1", validatorName:"maxLength"
+               }
+               , {
+                   body: 75, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_addressLine2", validatorName:"maxLength"
+               }
+               , {
+                   body: "#_noaregistrationportlet_WAR_noaomasportlet_emailAddress", custom:false, customValidatorRequired:true, errorMessage:"\u0045\u006d\u0061\u0069\u006c\u0020\u0041\u0064\u0064\u0072\u0065\u0073\u0073\u0020\u0061\u006e\u0064\u0020\u0043\u006f\u006e\u0066\u0069\u0072\u006d\u0020\u0045\u006d\u0061\u0069\u006c\u0020\u0041\u0064\u0064\u0072\u0065\u0073\u0073\u0020\u0064\u006f\u0020\u006e\u006f\u0074\u0020\u006d\u0061\u0074\u0063\u0068\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_confirmEmailAddress", validatorName:"equalTo"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_confirmEmailAddress", validatorName:"required"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_isLegalAgeCheckbox", validatorName:"required"
+               }
+               , {
+                   body: NOA.Custom.validateRomajiChar, custom:true, customValidatorRequired:true, errorMessage:"\u0050\u006c\u0065\u0061\u0073\u0065\u0020\u0065\u006e\u0074\u0065\u0072\u0020\u0052\u006f\u006d\u0061\u006a\u0069\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji", validatorName:"companyNameRomaji_custom"
+               }
+               , {
+                   body:function(c, b, d) {
+                       if(c.trim()==""&&NOA.Custom.hasKanji($("#_noaregistrationportlet_WAR_noaomasportlet_companyName").val())) {
+                           return false
+                       }
+                       return true
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u004f\u0072\u0067\u0061\u006e\u0069\u007a\u0061\u0074\u0069\u006f\u006e\u0061\u006c\u002f\u004c\u0065\u0067\u0061\u006c\u0020\u004e\u0061\u006d\u0065\u0020\u0028\u0052\u006f\u006d\u0061\u006a\u0069\u0029\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji", validatorName:"companyNameRomaji_custom_1"
+               }
+               , {
+                   body: 64, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_companyNameRomaji", validatorName:"maxLength"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_isAgreeCheckbox", validatorName:"required"
+               }
+               , {
+                   body:function(c, b, d) {
+                       if(c.trim()==""&&NOA.Custom.hasKanji($("#_noaregistrationportlet_WAR_noaomasportlet_dbaName").val())) {
+                           return false
+                       }
+                       return true
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0044\u006f\u0069\u006e\u0067\u0020\u0042\u0075\u0073\u0069\u006e\u0065\u0073\u0073\u0020\u0041\u0073\u0020\u004e\u0061\u006d\u0065\u0020\u0028\u0052\u006f\u006d\u0061\u006a\u0069\u0029\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji", validatorName:"dbaNameRomaji_custom_1"
+               }
+               , {
+                   body: NOA.Custom.validateRomajiChar, custom:true, customValidatorRequired:true, errorMessage:"\u0050\u006c\u0065\u0061\u0073\u0065\u0020\u0065\u006e\u0074\u0065\u0072\u0020\u0052\u006f\u006d\u0061\u006a\u0069\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji", validatorName:"dbaNameRomaji_custom"
+               }
+               , {
+                   body: 65, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_dbaNameRomaji", validatorName:"maxLength"
+               }
+               , {
+                   body: 100, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_nicknameAuth", validatorName:"maxLength"
+               }
+               , {
+                   body:function(c, b, d) {
+                       return _noaregistrationportlet_WAR_noaomasportlet_requiredForUnauthorizedUser(c)
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_lastNameAuth", validatorName:"lastNameAuth_custom_1"
+               }
+               , {
+                   body:function(c, b, d) {
+                       return _noaregistrationportlet_WAR_noaomasportlet_calculateNameLength("Auth")
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0054\u0068\u0065\u0020\u0063\u006f\u006d\u0062\u0069\u006e\u0061\u0074\u0069\u006f\u006e\u0020\u006f\u0066\u0020\u0066\u0069\u0072\u0073\u0074\u0020\u006e\u0061\u006d\u0065\u0020\u0061\u006e\u0064\u0020\u006c\u0061\u0073\u0074\u0020\u006e\u0061\u006d\u0065\u0020\u006d\u0075\u0073\u0074\u0020\u0062\u0065\u0020\u0033\u0032\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073\u0020\u006f\u0072\u0020\u006c\u0065\u0073\u0073\u0020\u0069\u006e\u0063\u006c\u0075\u0064\u0069\u006e\u0067\u0020\u0073\u0070\u0061\u0063\u0065\u0073\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_lastNameAuth", validatorName:"lastNameAuth_custom"
+               }
+               , {
+                   body:function(c, b, d) {
+                       if(NOA.Custom.hasFullWidthKatakanaExceptHalfWidthKE(c.trim())) {
+                           return false
+                       }
+                       return true
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0049\u006e\u0076\u0061\u006c\u0069\u0064\u0020\u0044\u006f\u0069\u006e\u0067\u0020\u0042\u0075\u0073\u0069\u006e\u0065\u0073\u0073\u0020\u0041\u0073\u0020\u004e\u0061\u006d\u0065\u002e\u0020\u0050\u006c\u0065\u0061\u0073\u0065\u0020\u0064\u006f\u0020\u006e\u006f\u0074\u0020\u0065\u006e\u0074\u0065\u0072\u0020\u0066\u0075\u006c\u006c\u0077\u0069\u0064\u0074\u0068\u0020\u004b\u0061\u0074\u0061\u006b\u0061\u006e\u0061\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_dbaName", validatorName:"dbaName_custom_1"
+               }
+               , {
+                   body: 65, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_dbaName", validatorName:"maxLength"
+               }
+               , {
+                   body:function(c, b, d) {
+                       return _noaregistrationportlet_WAR_noaomasportlet_requiredForIndividual(c, true)
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_dbaName", validatorName:"dbaName_custom"
+               }
+               , {
+                   body: 75, custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_regionOther", validatorName:"maxLength"
+               }
+               , {
+                   body:function(c, b, d) {
+                       return _noaregistrationportlet_WAR_noaomasportlet_calculateNameLength("")
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0054\u0068\u0065\u0020\u0063\u006f\u006d\u0062\u0069\u006e\u0061\u0074\u0069\u006f\u006e\u0020\u006f\u0066\u0020\u0066\u0069\u0072\u0073\u0074\u0020\u006e\u0061\u006d\u0065\u0020\u0061\u006e\u0064\u0020\u006c\u0061\u0073\u0074\u0020\u006e\u0061\u006d\u0065\u0020\u006d\u0075\u0073\u0074\u0020\u0062\u0065\u0020\u0033\u0032\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073\u0020\u006f\u0072\u0020\u006c\u0065\u0073\u0073\u0020\u0069\u006e\u0063\u006c\u0075\u0064\u0069\u006e\u0067\u0020\u0073\u0070\u0061\u0063\u0065\u0073\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_firstName", validatorName:"firstName_custom"
+               }
+               , {
+                   body: "", custom:false, customValidatorRequired:true, errorMessage:"", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_firstName", validatorName:"required"
+               }
+               , {
+                   body:function(c, b, d) {
+                       return _noaregistrationportlet_WAR_noaomasportlet_requiredForUnauthorizedUser(c)
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_emailAddressAuth", validatorName:"emailAddressAuth_custom"
+               }
+               , {
+                   body: 75, custom:false, customValidatorRequired:true, errorMessage:"\u0054\u0068\u0065\u0020\u0065\u006d\u0061\u0069\u006c\u0020\u0061\u0064\u0064\u0072\u0065\u0073\u0073\u0020\u006d\u0075\u0073\u0074\u0020\u0062\u0065\u0020\u006c\u0065\u0073\u0073\u0020\u0074\u0068\u0061\u006e\u0020\u0037\u0035\u0020\u0063\u0068\u0061\u0072\u0061\u0063\u0074\u0065\u0072\u0073", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_emailAddressAuth", validatorName:"maxLength"
+               }
+               , {
+                   body:function(d, c, e) {
+                       var b=$("#_noaregistrationportlet_WAR_noaomasportlet_isAuthorizedUser").val()=="true";
+                       if( !b) {
+                           return NOA.Custom.validateEmail(d)
+                       }
+                       return true
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0050\u006c\u0065\u0061\u0073\u0065\u0020\u0065\u006e\u0074\u0065\u0072\u0020\u0061\u0020\u0076\u0061\u006c\u0069\u0064\u0020\u0065\u006d\u0061\u0069\u006c\u0020\u0061\u0064\u0064\u0072\u0065\u0073\u0073\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_emailAddressAuth", validatorName:"emailAddressAuth_custom_1"
+               }
+               , {
+                   body:function(b) {
+                       if(b.trim() !=""&&b.toUpperCase()===$("#_noaregistrationportlet_WAR_noaomasportlet_emailAddress").val().toUpperCase()) {
+                           return false
+                       }
+                       return true
+                   }
+                   , custom:true, customValidatorRequired:true, errorMessage:"\u0041\u0067\u0072\u0065\u0065\u006d\u0065\u006e\u0074\u0020\u0041\u0070\u0070\u0072\u006f\u0076\u0065\u0072\u0027\u0073\u0020\u0065\u006d\u0061\u0069\u006c\u0020\u0061\u0064\u0064\u0072\u0065\u0073\u0073\u0020\u006d\u0075\u0073\u0074\u0020\u0062\u0065\u0020\u0064\u0069\u0066\u0066\u0065\u0072\u0065\u006e\u0074\u0020\u0066\u0072\u006f\u006d\u0020\u0074\u0068\u0065\u0020\u0043\u006f\u006d\u0070\u0061\u006e\u0079\u0020\u0041\u0064\u006d\u0069\u006e\u0027\u0073\u0020\u0065\u006d\u0061\u0069\u006c\u0020\u0061\u0064\u0064\u0072\u0065\u0073\u0073\u002e", fieldName:"_noaregistrationportlet_WAR_noaomasportlet_emailAddressAuth", validatorName:"emailAddressAuth_custom_2"
+               }
+               ]
+           }
+           )
+       }
+       )();
+       (function() {
+           var b=AUI();
+           var g=["country"];
+           var d=["region"];
+           var c=["postalCode"];
+           var e=true;
+           NOA.Custom.displayFieldRequiredLabel("#_noaregistrationportlet_WAR_noaomasportlet_country", true);
+           Liferay.FormWizard.init("_noaregistrationportlet_WAR_noaomasportlet_");
+           Liferay.FormWizard.addValidatorRule(g, "min", "\u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e", false, 1);
+           Liferay.FormWizard.addValidatorRule(g, "required", "\u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e", false, "");
+           var i=function(m, j, l) {
+               var k=function(n) {
+                   var o=n;
+                   l(j, o.zipRequired)
+               }
+               ;
+               Liferay.Service("/noa-omas-portlet.myprofile/get-country", m, k)
+           }
+           ;
+           var f=b.one("#_noaregistrationportlet_WAR_noaomasportlet_country");
+           f.on("change", function() {
+               if(e) {
+                   Liferay.FormWizard.addValidatorRule(c, "zipRequired", "\u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e", true, function(x, u, y) {
+                       var v=$("#_noaregistrationportlet_WAR_noaomasportlet_postalCode");
+                       var t=v.closest(".control-group");
+                       var s=t.find(".control-label");
+                       var w=s.find(".label-required");
+                       if(w&&w.css("display") !="none") {
+                           return(x||x !=="")
+                       }
+                       else {
+                           return true
+                       }
+                   }
+                   )
+               }
+               var j=Liferay.FormWizard.getValidator();
+               var q="_noaregistrationportlet_WAR_noaomasportlet_region";
+               var r=j.getField(q);
+               j.resetField(r);
+               var m="_noaregistrationportlet_WAR_noaomasportlet_postalCode";
+               var o=j.getField(m);
+               j.resetField(o);
+               var p=document.getElementById("_noaregistrationportlet_WAR_noaomasportlet_country");
+               var n=p.value;
+               if(n>0) {
+                   var l="#"+m;
+                   var k=i( {
+                       countryId: n
+                   }
+                   , l, NOA.Custom.displayFieldRequiredLabel)
+               }
+               e=false
+           }
+           );
+           var h=["yearsInDevelopment"];
+           NOA.Custom.displayFieldRequiredLabel("#_noaregistrationportlet_WAR_noaomasportlet_yearsInDevelopment", true);
+           Liferay.FormWizard.addValidatorRule(h, "requireYearsInDevelopment", "\u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e", true, function(m, l, n) {
+               var j=l.get("name");
+               var k=document.getElementById(j);
+               if(k.options.length>1) {
+                   return(m !="")
+               }
+               return true
+           }
+           )
+       }
+       )();
+       (function() {
+           var b=function(f, d) {
+               var e=function(l) {
+                   var j=(l&&l.length>0);
+                   var k= !j;
+                   var i=["regionOther"];
+                   var h=["region"];
+                   $("#_noaregistrationportlet_WAR_noaomasportlet_region").parents(".control-group").toggle(j);
+                   $("#_noaregistrationportlet_WAR_noaomasportlet_regionOther").parents(".control-group").toggle(k);
+                   NOA.Custom.displayFieldRequiredLabel("#_noaregistrationportlet_WAR_noaomasportlet_region", j);
+                   var g=$("#_noaregistrationportlet_WAR_noaomasportlet_country").val();
+                   if(j) {
+                       Liferay.FormWizard.addValidatorRule(h, "checkRegion", "\u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e", true, function(q, p, r) {
+                           var n=p.get("name");
+                           var o=document.getElementById(n);
+                           var m=o.options;
+                           if(m&&m.length>1) {
+                               return(q>0)
+                           }
+                           return true
+                       }
+                       )
+                   }
+                   else {
+                       NOA.Custom.displayFieldRequiredLabel("#_noaregistrationportlet_WAR_noaomasportlet_regionOther", false);
+                       $("#_noaregistrationportlet_WAR_noaomasportlet_regionOther").next("div.form-validator-stack").remove();
+                       $("#_noaregistrationportlet_WAR_noaomasportlet_regionOther").parent().removeClass("error");
+                       Liferay.FormWizard.addValidatorRule(i, "checkRegion", "\u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e ", true, function(n, m, o) {
+                           return true
+                       }
+                       )
+                   }
+                   Liferay.Service("/noa-omas-portlet.myprofile/get-country", {
+                       countryId: Number(g)
+                   }
+                   , function(m) {
+                       if(m.a3=="JPN") {
+                           NOA.Custom.displayFieldRequiredLabel("#_noaregistrationportlet_WAR_noaomasportlet_regionOther", true);
+                           Liferay.FormWizard.addValidatorRule(i, "checkRegion", " \u0054\u0068\u0069\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e", true, function(r, q, s) {
+                               var o=q.get("name");
+                               var p=document.getElementById(o);
+                               var n=p.value;
+                               return(n.length>0)
+                           }
+                           )
+                       }
+                   }
+                   );
+                   f(l)
+               }
+               ;
+               Liferay.Service("/noa-omas-portlet.myprofile/get-regions", {
+                   countryId: Number(d), active:true
+               }
+               , e)
+           }
+           ;
+           var c=function(d) {
+               Liferay.Service("/noa-omas-portlet.myprofile/get-countries", {
+                   active: true
+               }
+               , d)
+           }
+           ;
+           new Liferay.DynamicSelect([ {
+               select: "_noaregistrationportlet_WAR_noaomasportlet_country", selectData:c, selectDesc:"name", selectId:"countryId", selectVal:"0"
+           }
+           , {
+               select: "_noaregistrationportlet_WAR_noaomasportlet_region", selectData:b, selectDesc:"name", selectId:"regionId", selectVal:"0"
+           }
+           ])
+       }
+       )()
+   }
+   
+   );
+   </script><script src="../noa-theme/js/main.js" type="text/javascript"></script></html>
