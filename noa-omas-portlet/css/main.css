@@ -10644,8 +10644,8 @@ html .noa-lotcheck-versions table tfoot tr th {
 
 @font-face {
     font-family: 'FontAwesome';
-    src: url("/noa-theme/css/../fonts/fontawesome-webfont.eot?v=4.5.0");
-    src: url("/noa-theme/css/../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("/noa-theme/css/../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("/noa-theme/css/../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("/noa-theme/css/../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("/noa-theme/css/../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+    src: url("../../noa-theme/css/2dots/fonts/fontawesome-webfont.eot");
+    src: url("../../noa-theme/css/2dots/fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../../noa-theme/css/2dots/fonts/fontawesome-webfont.woff2") format("woff2"), url("../../noa-theme/css/2dots/fonts/fontawesome-webfont.woff") format("woff"), url("../../noa-theme/css/2dots/fonts/fontawesome-webfont.ttf") format("truetype"), url("../../noa-theme/css/2dots/fonts/fontawesome-webfont.svg") format("svg");
     font-weight: normal;
     font-style: normal
 }
